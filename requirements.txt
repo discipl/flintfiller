@@ -1,0 +1,4 @@
+pandas==1.0.3
+nltk==3.4.5
+pattern==3.6
+xmltodict==0.12.0
