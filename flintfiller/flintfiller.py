@@ -75,6 +75,12 @@ def process_from_commandline():
         chunk_tag_dataframe.parser('pattern', input_df, output_postagged_df)
         print(f'finished with parsing dataframe to POS tagged dataframe, check file: ' + output_postagged_df)
 
+    elif args.dict_file and args.df_file and not (args.xml or args.pt_file):
+        input_dict_file = args.dict_file
+        output_df_file = args.df_file
+        dict_to_dataframe.dict_to_dataframe(input_dict_file, output_df_file)
+        print(f'finished with creating dataframe from dictionary, check file: ' + output_df_file)
+
     else:
         print('you did not pass the right combination of arguments, parsing not possible.')
 

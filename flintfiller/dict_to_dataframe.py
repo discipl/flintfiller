@@ -22,37 +22,29 @@
 
 import pandas as pd
 import json
-from typing import TypeVar
+from typing import TypeVar, Union
 
 PandasDataFrame = TypeVar('pandas.core.frame.Dataframe')
 
 
 def dict_to_dataframe(json_dict_file, output_df) -> PandasDataFrame:
-    with open(json_dict_file) as json_dict:
+    with open(json_dict_file, encoding="utf8") as json_dict:
         my_dict = json.load(json_dict)
         print('Writing dataframe to csv file')
-        dn = get_content_hoofdstuk(my_dict)
+        dn = get_content_wet(my_dict)
         dn.to_csv(output_df)
         return dn
 
 
-def get_content_hoofdstuk(my_dict: dict) -> PandasDataFrame:
+def get_content_wet(my_dict: dict) -> PandasDataFrame:
     wettexten = []
     artikel_nummers = []
     jcis = []
     versiedata = []
     if "wet-besluit" in my_dict['toestand']['wetgeving'].keys():
-        for hoofdstuk in my_dict['toestand']['wetgeving']['wet-besluit']['wettekst']['hoofdstuk']:
-            if 'artikel' in hoofdstuk.keys():
-                get_content_artikel(hoofdstuk['artikel'], wettexten, artikel_nummers, jcis, versiedata)
-            if 'afdeling' in hoofdstuk.keys():
-                get_content_afdeling(hoofdstuk, wettexten, artikel_nummers, jcis, versiedata)
-            if 'paragraaf' in hoofdstuk.keys():
-                get_content_paragraaf(hoofdstuk, wettexten, artikel_nummers, jcis, versiedata)
+        get_content_wetbesluit(artikel_nummers, jcis, my_dict, versiedata, wettexten)
     elif "regeling" in my_dict['toestand']['wetgeving'].keys():
-        print(
-            'this dictionary has text under unknown keys and cannot properly be parsed to a dataframe. Your '
-            'dataframe might have errors or even be empty.')
+        get_content_regeling(artikel_nummers, jcis, my_dict, versiedata, wettexten)
     else:
         print(
             'this dictionary has text under unknown keys and cannot properly be parsed to a dataframe. Your '
@@ -66,21 +58,54 @@ def get_content_hoofdstuk(my_dict: dict) -> PandasDataFrame:
     return wet_df
 
 
-def get_content_paragraaf(hoofdstuk: dict, wettexten: list, artikel_nummers: list, jcis: list, versiedata: list):
-    for paragraaf in hoofdstuk['paragraaf']:
+def get_content_regeling(artikel_nummers, jcis, my_dict, versiedata, wettexten):
+    if 'artikel' in my_dict['toestand']['wetgeving']['regeling']['regeling-tekst'].keys():
+        for artikel in my_dict['toestand']['wetgeving']['regeling']['regeling-tekst']['artikel']:
+            get_content_artikel(artikel, wettexten, artikel_nummers, jcis, versiedata)
+    elif 'hoofdstuk' in my_dict['toestand']['wetgeving']['regeling']['regeling-tekst'].keys():
+        get_content_hoofdstuk(artikel_nummers, jcis, my_dict, versiedata, wettexten)
+
+
+def get_content_hoofdstuk(artikel_nummers, jcis, my_dict, versiedata, wettexten):
+    for hoofdstuk in my_dict['toestand']['wetgeving']['regeling']['regeling-tekst']['hoofdstuk']:
+        if 'artikel' in hoofdstuk.keys():
+            get_content_artikel(hoofdstuk['artikel'], wettexten, artikel_nummers, jcis, versiedata)
+        elif 'afdeling' in hoofdstuk.keys():
+            get_content_afdeling(hoofdstuk, wettexten, artikel_nummers, jcis, versiedata)
+        elif 'paragraaf' in hoofdstuk.keys():
+            get_content_paragraaf(hoofdstuk['paragraaf'], wettexten, artikel_nummers, jcis, versiedata)
+
+
+def get_content_wetbesluit(artikel_nummers, jcis, my_dict, versiedata, wettexten):
+    for hoofdstuk in my_dict['toestand']['wetgeving']['wet-besluit']['wettekst']['hoofdstuk']:
+        if 'artikel' in hoofdstuk.keys():
+            get_content_artikel(hoofdstuk['artikel'], wettexten, artikel_nummers, jcis, versiedata)
+        elif 'afdeling' in hoofdstuk.keys():
+            get_content_afdeling(hoofdstuk, wettexten, artikel_nummers, jcis, versiedata)
+        elif 'paragraaf' in hoofdstuk.keys():
+            get_content_paragraaf(hoofdstuk['paragraaf'], wettexten, artikel_nummers, jcis, versiedata)
+
+
+def get_content_paragraaf(paragraaf: Union[dict, list], wettexten: list, artikel_nummers: list, jcis: list, versiedata: list):
+    if isinstance(paragraaf, dict):
         if 'artikel' in paragraaf.keys():
             get_content_artikel(paragraaf['artikel'], wettexten, artikel_nummers, jcis, versiedata)
+    elif isinstance(paragraaf, list):
+        for paragraaf_item in paragraaf:
+            get_content_paragraaf(paragraaf_item, wettexten, artikel_nummers, jcis, versiedata)
+    else:
+        print('This paragraph is neither a list nor a dictionary and cannot be parsed')
 
 
 def get_content_afdeling(hoofdstuk: dict, wettexten: list, artikel_nummers: list, jcis: list, versiedata: list):
     for afdeling in hoofdstuk['afdeling']:
         if 'artikel' in afdeling.keys():
             get_content_artikel(afdeling['artikel'], wettexten, artikel_nummers, jcis, versiedata)
-        if 'paragraaf' in afdeling.keys():
-            get_content_paragraaf(afdeling, wettexten, artikel_nummers, jcis, versiedata)
+        elif 'paragraaf' in afdeling.keys():
+            get_content_paragraaf(afdeling['paragraaf'], wettexten, artikel_nummers, jcis, versiedata)
 
 
-def get_content_artikel(artikel: dict, wettexten: list, artikel_nummers: list, jcis: list, versiedata: list):
+def get_content_artikel(artikel: Union[dict, list], wettexten: list, artikel_nummers: list, jcis: list, versiedata: list):
     if isinstance(artikel, dict):
         artikel_nummers.append(artikel['@bwb-ng-variabel-deel'])
         unlayered_data = {}
@@ -111,7 +136,7 @@ def get_content_artikel(artikel: dict, wettexten: list, artikel_nummers: list, j
             else:
                 unlayered_data[key_artikel] = value_artikel
 
-        texts_artikel = [' $$ '.join(texts_artikel)]
+        texts_artikel = [' '.join(texts_artikel)]
         wettexten.append(texts_artikel)
 
     if isinstance(artikel, list):
@@ -122,11 +147,16 @@ def get_content_artikel(artikel: dict, wettexten: list, artikel_nummers: list, j
 def get_content_lijst(lijst, text_list: list) -> list:
     if isinstance(lijst, dict):
         for onderdeel in lijst['li']:
+            bwb_nummer = onderdeel['@bwb-ng-variabel-deel']
+            text_list.append(' $ ' + get_onderdeel(bwb_nummer) + " : " + ' $ ')
             if isinstance(onderdeel, dict):
                 if 'al' in onderdeel.keys() and isinstance(onderdeel['al'], str):
                     text_list.append(onderdeel['al'])
-                if 'al' in onderdeel.keys() and isinstance(onderdeel['al'], dict):
+                elif 'al' in onderdeel.keys() and isinstance(onderdeel['al'], dict):
                     content_al = onderdeel['al']
+                    if 'nadruk' in content_al.keys():
+                        text_nadruk = content_al['nadruk']['#text']
+                        text_list.append(text_nadruk)
                     if '#text' in content_al.keys():
                         text_al = content_al['#text']
                         if 'intref' in content_al.keys():
@@ -152,22 +182,29 @@ def get_content_lijst(lijst, text_list: list) -> list:
 
 def get_content_lid(leden, text_list: list) -> list:
     for lid in leden:
+        bwb_nummer = lid['@bwb-ng-variabel-deel']
+        text_list.append(' $ ' + get_onderdeel(bwb_nummer) + " : " + ' $ ')
+
         if 'al' in lid.keys() and isinstance(lid['al'], str):
             text_list.append(lid['al'])
-        if 'al' in lid.keys() and isinstance(lid['al'], dict):
-            content_al = lid['al']
-            text_al = content_al['#text']
 
-            if 'intref' in content_al.keys():
-                intref_text = get_content_ref(content_al['intref'])
-                if isinstance(intref_text, str):
-                    text_list.append(text_al + intref_text)
-            if 'extref' in content_al.keys():
-                extref_text = get_content_ref(content_al['extref'])
-                if isinstance(extref_text, str):
-                    text_list.append(text_al + extref_text)
+        elif 'al' in lid.keys() and isinstance(lid['al'], dict):
+            content_al = lid['al']
+            if 'redactie' in content_al.keys():
+                return text_list
             else:
-                text_list.append(text_al)
+                text_al = content_al['#text']
+                if 'intref' in content_al.keys():
+                    intref_text = get_content_ref(content_al['intref'])
+                    if isinstance(intref_text, str):
+                        text_list.append(text_al + intref_text)
+                if 'extref' in content_al.keys():
+                    extref_text = get_content_ref(content_al['extref'])
+                    if isinstance(extref_text, str):
+                        text_list.append(text_al + extref_text)
+                else:
+                    text_list.append(text_al)
+
         if 'lijst' in lid.keys():
             get_content_lijst(lid['lijst'], text_list)
     return text_list
@@ -205,3 +242,7 @@ def get_versie_datum(metadata, versiedata):
         if versiedatums_list[0] == versiedatums_list[1]:
             del versiedatums_list[0]
         versiedata.append(versiedatums_list)
+
+
+def get_onderdeel(bwb_deel):
+    return bwb_deel.rsplit('/', 1)[-1]

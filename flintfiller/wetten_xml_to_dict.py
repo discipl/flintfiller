@@ -26,7 +26,8 @@ import xmltodict
 
 def parse_xml_artikelen(xml_file, output_file):
     with open(xml_file, encoding="utf8") as xml:
-        xml_dict = xmltodict.parse(xml.read())
+        read = xml.read()
+        xml_dict = xmltodict.parse(remove_unicodes(read))
         # If you want just the text out of the xml, uncomment the following part and
         # replace xml_dict below with artikelen
         #
@@ -46,6 +47,10 @@ def parse_xml_artikelen(xml_file, output_file):
     with open(output_file, 'w') as file:
         print('Writing dictionary to json file')
         file.write(json.dumps(xml_dict))
+
+
+def remove_unicodes(read):
+    return read.encode('ascii', 'ignore').decode('unicode_escape')
 
 
 def get_text_artikelen(afdeling, artikelen):
