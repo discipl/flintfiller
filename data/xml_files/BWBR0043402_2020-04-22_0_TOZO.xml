@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?><toestand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" bwb-ng-vast-deel="http://wetten.overheid.nl/id/BWBR0043402/2020-04-22/0" xsi:noNamespaceSchemaLocation="https://repository.officiele-overheidspublicaties.nl/Schema/BWB-toestand/2016-1/xsd/toestand_2016-1.xsd" bwb-id="BWBR0043402" inwerkingtreding="2020-04-22"><bwb-inputbestand/><bwb-wijzigingen/><redactionele-correcties/><wetgeving dtdversie="2.0" soort="AMvB" stam-id="15412623" versie-id="26639992" id="C37791281" label-id="15356824" inwerkingtredingsdatum="2020-04-22">
+  <intitule bwb-ng-variabel-deel="/Intitule" stam-id="15412653" versie-id="26639662" id="C37790951" label-id="15356494" inwerking="2020-04-22" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">Besluit van 17 april 2020, houdende tijdelijke regels omtrent bijstandsverlening aan zelfstandigen die financieel getroffen zijn door de gevolgen van de crisis in verband met COVID-19 (Tijdelijke overbruggingsregeling zelfstandig ondernemers)<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata></meta-data></intitule>
+  <citeertitel bwb-ng-variabel-deel="/Citeertitel" status="officieel" stam-id="15412663" versie-id="26639672" id="C37790961" label-id="15356504" inwerking="2020-04-22" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21">Tijdelijke overbruggingsregeling zelfstandig ondernemers<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata></meta-data></citeertitel>
+  <wet-besluit>
+    <aanhef bwb-ng-variabel-deel="/Aanhef" stam-id="15412673" versie-id="26639682" id="C37790971" label-id="15356514" inwerking="2020-04-22" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <wij>Wij Willem-Alexander, bij de gratie Gods, Koning der Nederlanden, Prins van Oranje-Nassau, enz. enz. enz.</wij>
+  <considerans>
+    <considerans.al bevat="voordracht">Op de voordracht van de Staatssecretaris van Sociale Zaken en Werkgelegenheid van 10 april 2020, nr. 2020-0000051085;</considerans.al>
+    <considerans.al bevat="grondslag">Gelet op <extref doc="jci1.3:c:BWBR0015703&amp;artikel=78f" label-id="9836104" verwijzing-id="2993569" bwb-id="BWBR0015703">artikel 78f van de Participatiewet</extref> en <extref doc="jci1.3:c:BWBR0013060&amp;artikel=63" label-id="1602374" verwijzing-id="2993570" bwb-id="BWBR0013060">artikel 63 van de Wet structuur uitvoeringsorganisatie werk en inkomen</extref>;</considerans.al>
+    <considerans.al bevat="gehoord">De Afdeling advisering van de Raad van State gehoord 14 april 2020, No.W12.20.0110/III;</considerans.al>
+    <considerans.al bevat="gezien">Gezien het nader rapport van de Staatssecretaris van Sociale Zaken en Werkgelegenheid van 17 april 2020, nr. 2020-0000052742;</considerans.al>
+  </considerans>
+  <afkondiging>
+    <al>Hebben goedgevonden en verstaan:</al>
+  </afkondiging>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata></meta-data></aanhef>
+    <wettekst>
+      <hoofdstuk bwb-ng-variabel-deel="/Hoofdstuk1" stam-id="15412723" versie-id="26639732" id="C37791021" label-id="15356564" inwerking="2020-04-22" label="Hoofdstuk 1" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <kop>
+    <label>Hoofdstuk</label>
+    <nr status="officieel">1</nr>
+    <titel status="officieel">Algemene bepalingen</titel>
+  </kop><artikel bwb-ng-variabel-deel="/Hoofdstuk1/Artikel1" stam-id="15412683" versie-id="26639692" id="C37790981" label-id="15356524" inwerking="2020-04-22" label="Artikel 1" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">1</nr>
+    <titel status="officieel">Definitiebepalingen</titel>
+  </kop>
+  <al>In dit besluit en de daarop berustende bepalingen wordt verstaan onder:</al>
+  <lijst level="single" nr-sluiting="." start="1" type="ongemarkeerd">
+    <li bwb-ng-variabel-deel="/Hoofdstuk1/Artikel1/Onderdeel_1">
+      <al>
+        <nadruk type="cur">algemene de-minimisverordening:</nadruk> verordening (EU) nr. 1407/2013 van de Commissie van 18 december 2013 betreffende de toepassing van de artikelen 107 en 108 van het Verdrag betreffende de werking van de Europese Unie op de-minimissteun (PbEU 2013, L 352);</al>
+    </li>
+    <li bwb-ng-variabel-deel="/Hoofdstuk1/Artikel1/Onderdeel_2">
+      <al>
+        <nadruk type="cur">verklaring:</nadruk> verklaring als bedoeld in <intref doc="jci1.3:c:BWBR0043402&amp;hoofdstuk=1&amp;artikel=2&amp;z=2020-04-22&amp;g=2020-04-22" label-id="15356534" verwijzing-id="2993589" bwb-id="BWBR0043402" bwb-ng-variabel-deel="/Hoofdstuk1/Artikel2">artikel 2, eerste lid</intref>;</al>
+    </li>
+    <li bwb-ng-variabel-deel="/Hoofdstuk1/Artikel1/Onderdeel_3">
+      <al>
+        <nadruk type="cur">wet:</nadruk>
+        <extref doc="jci1.3:c:BWBR0015703" label-id="5408634" verwijzing-id="2993571" bwb-id="BWBR0015703">Participatiewet</extref>;</al>
+    </li>
+    <li bwb-ng-variabel-deel="/Hoofdstuk1/Artikel1/Onderdeel_4">
+      <al>
+        <nadruk type="cur">zelfstandige:</nadruk> de rechthebbende, bedoeld in <extref doc="jci1.3:c:BWBR0015703&amp;artikel=11" label-id="5407584" verwijzing-id="2993572" bwb-id="BWBR0015703">artikel 11, van de wet</extref> die achttien jaar of ouder is maar de pensioengerechtigde leeftijd nog niet heeft bereikt en die voor de voorziening in het bestaan is aangewezen op arbeid in eigen bedrijf of zelfstandig beroep hier te lande en die;</al>
+      <lijst level="single" nr-sluiting="." start="1" type="expliciet">
+        <li bwb-ng-variabel-deel="/Hoofdstuk1/Artikel1/Onderdeel_4/Onderdeela">
+          <li.nr>a.</li.nr>
+          <al>voldoet aan de wettelijke vereisten voor de uitoefening daarvan;</al>
+        <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=1&amp;artikel=1&amp;o=a&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="o=a"/></jcis></meta-data></li>
+        <li bwb-ng-variabel-deel="/Hoofdstuk1/Artikel1/Onderdeel_4/Onderdeelb">
+          <li.nr>b.</li.nr>
+          <al>ten minste 1.225 uur per jaar besteedt aan werkzaamheden voor het bedrijf of zelfstandig beroep; en</al>
+        <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=1&amp;artikel=1&amp;o=b&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="o=b"/></jcis></meta-data></li>
+        <li bwb-ng-variabel-deel="/Hoofdstuk1/Artikel1/Onderdeel_4/Onderdeelc">
+          <li.nr>c.</li.nr>
+          <al>alleen of samen met degene met wie hij het bedrijf of zelfstandig beroep uitoefent de volledige zeggenschap in dat bedrijf of zelfstandig beroep heeft en de financiële risico’s daarvan draagt.</al>
+        <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=1&amp;artikel=1&amp;o=c&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="o=c"/></jcis></meta-data></li>
+      </lijst>
+    </li>
+  </lijst>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;artikel=1&amp;g=2020-04-22" onderdeel="artikel=1" korte-verwijzing="1.0:c:BWBR0043402&amp;artikel=1"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=1&amp;artikel=1&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="artikel=1" korte-verwijzing="jci1.3:c:BWBR0043402&amp;artikel=1"/></jcis></meta-data></artikel><artikel bwb-ng-variabel-deel="/Hoofdstuk1/Artikel2" stam-id="15412693" versie-id="26639702" id="C37790991" label-id="15356534" inwerking="2020-04-22" label="Artikel 2" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">2</nr>
+    <titel status="officieel">Kring van rechthebbenden</titel>
+  </kop>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk1/Artikel2/Lid1" label-id="15356534L1">
+    <lidnr status="officieel">1</lidnr>
+    <al>Algemene bijstand of bijstand ter voorziening in de behoefte aan bedrijfskapitaal op grond van dit besluit kan worden verleend aan de zelfstandige die op 17 maart 2020 stond ingeschreven in het handelsregister, bedoeld in <extref doc="jci1.3:c:BWBR0021777&amp;artikel=2" label-id="9037664" verwijzing-id="2993573" bwb-id="BWBR0021777">artikel 2, van de Handelsregisterwet 2007</extref> en schriftelijk verklaart dat diens bedrijf of zelfstandig beroep financieel is geraakt als gevolg van de crisis in verband met COVID-19.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=1&amp;artikel=2&amp;lid=1&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=1"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk1/Artikel2/Lid2" label-id="15356534L2">
+    <lidnr status="officieel">2</lidnr>
+    <al>Algemene bijstand op grond van dit besluit wordt niet verleend aan de zelfstandige die algemene bijstand ontvangt op grond van het <extref doc="jci1.3:c:BWBR0015711" label-id="5412914" verwijzing-id="2993574" bwb-id="BWBR0015711">Besluit bijstandverlening zelfstandigen 2004</extref>.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=1&amp;artikel=2&amp;lid=2&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=2"/></jcis></meta-data></lid>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;artikel=2&amp;g=2020-04-22" onderdeel="artikel=2" korte-verwijzing="1.0:c:BWBR0043402&amp;artikel=2"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=1&amp;artikel=2&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="artikel=2" korte-verwijzing="jci1.3:c:BWBR0043402&amp;artikel=2"/></jcis></meta-data></artikel><artikel bwb-ng-variabel-deel="/Hoofdstuk1/Artikel3" stam-id="15412703" versie-id="26639712" id="C37791001" label-id="15356544" inwerking="2020-04-22" label="Artikel 3" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">3</nr>
+    <titel status="officieel">De aanvraag</titel>
+  </kop>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk1/Artikel3/Lid1" label-id="15356544L1">
+    <lidnr status="officieel">1</lidnr>
+    <al>In afwijking van <extref doc="jci1.3:c:BWBR0015703&amp;artikel=41" label-id="5407994" verwijzing-id="2993575" bwb-id="BWBR0015703">artikel 41 van de wet</extref> wordt de aanvraag ingediend bij het college.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=1&amp;artikel=3&amp;lid=1&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=1"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk1/Artikel3/Lid2" label-id="15356544L2">
+    <lidnr status="officieel">2</lidnr>
+    <al>De aanvraag wordt ingediend voor 1 juni 2020 en wordt voor de toepassing van <extref doc="jci1.3:c:BWBR0015703&amp;artikel=44" label-id="5408034" verwijzing-id="2993576" bwb-id="BWBR0015703">artikel 44, eerste lid, derde zinsdeel, van de wet</extref> geacht te zijn ingediend op 1 maart 2020.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=1&amp;artikel=3&amp;lid=2&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=2"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk1/Artikel3/Lid3" label-id="15356544L3">
+    <lidnr status="officieel">3</lidnr>
+    <al>Voor de ondernemer in de binnenvaart, bedoeld in <extref doc="jci1.3:c:BWBR0015711&amp;artikel=1" label-id="5412054" verwijzing-id="2993577" bwb-id="BWBR0015711">artikel 1, onderdeel k, van het Besluit bijstandverlening zelfstandigen 2004</extref>, die geen woonplaats heeft als bedoeld in <extref doc="jci1.3:c:BWBR0015703&amp;artikel=40" label-id="5407984" verwijzing-id="2993578" bwb-id="BWBR0015703">artikel 40, eerste lid, van de wet</extref>, bestaat het recht op bijstand jegens het college van de gemeente waar de ondernemer in de binnenvaart op het moment van de aanvraag zijn feitelijke ligplaats heeft.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=1&amp;artikel=3&amp;lid=3&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=3"/></jcis></meta-data></lid>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;artikel=3&amp;g=2020-04-22" onderdeel="artikel=3" korte-verwijzing="1.0:c:BWBR0043402&amp;artikel=3"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=1&amp;artikel=3&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="artikel=3" korte-verwijzing="jci1.3:c:BWBR0043402&amp;artikel=3"/></jcis></meta-data></artikel><artikel bwb-ng-variabel-deel="/Hoofdstuk1/Artikel4" stam-id="15412713" versie-id="26639722" id="C37791011" label-id="15356554" inwerking="2020-04-22" label="Artikel 4" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">4</nr>
+    <titel status="officieel">Aanvraagformulier</titel>
+  </kop>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk1/Artikel4/Lid1" label-id="15356554L1">
+    <lidnr status="officieel">1</lidnr>
+    <al>De aanvraag kan worden ingediend door middel van een door Onze Minister beschikbaar gesteld formulier. De hiervoor benodigde gegevens worden niet verkregen van de zelfstandige voor zover zij door Onze Minister verkregen kunnen worden uit het handelsregister, bedoeld in <extref doc="jci1.3:c:BWBR0021777&amp;artikel=2" label-id="9037664" verwijzing-id="2993579" bwb-id="BWBR0021777">artikel 2 van de Handelsregisterwet 2007</extref>, alsmede van Onze Minister van Onderwijs, Cultuur en Wetenschap.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=1&amp;artikel=4&amp;lid=1&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=1"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk1/Artikel4/Lid2" label-id="15356554L2">
+    <lidnr status="officieel">2</lidnr>
+    <al>De voor de aanvraag benodigde gegevens worden door Onze Minister niet verkregen van de zelfstandige voor zover zij door het college verkregen kunnen worden uit de basisregistratie personen.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=1&amp;artikel=4&amp;lid=2&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=2"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk1/Artikel4/Lid3" label-id="15356554L3">
+    <lidnr status="officieel">3</lidnr>
+    <al>In afwijking van <extref doc="jci1.3:c:BWBR0013267&amp;artikel=5.24" label-id="9450484" verwijzing-id="2993580" bwb-id="BWBR0013267">artikel 5.24, eerste lid, van het Besluit SUWI</extref> is het Inlichtingenbureau verwerker voor Onze Minister voor het verwerken van de gegevens die door tussenkomst van het Inlichtingenbureau door Onze Minister worden verkregen ten behoeve van de taak, bedoeld in het eerste lid.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=1&amp;artikel=4&amp;lid=3&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=3"/></jcis></meta-data></lid>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;artikel=4&amp;g=2020-04-22" onderdeel="artikel=4" korte-verwijzing="1.0:c:BWBR0043402&amp;artikel=4"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=1&amp;artikel=4&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="artikel=4" korte-verwijzing="jci1.3:c:BWBR0043402&amp;artikel=4"/></jcis></meta-data></artikel><meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;hoofdstuk=1&amp;g=2020-04-22" onderdeel="hoofdstuk=1" korte-verwijzing="1.0:c:BWBR0043402&amp;hoofdstuk=1"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=1&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="hoofdstuk=1" korte-verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=1"/></jcis></meta-data></hoofdstuk>
+      <hoofdstuk bwb-ng-variabel-deel="/Hoofdstuk2" stam-id="15412783" versie-id="26639792" id="C37791081" label-id="15356624" inwerking="2020-04-22" label="Hoofdstuk 2" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <kop>
+    <label>Hoofdstuk</label>
+    <nr status="officieel">2</nr>
+    <titel status="officieel">Algemene bijstand</titel>
+  </kop><artikel bwb-ng-variabel-deel="/Hoofdstuk2/Artikel5" stam-id="15412733" versie-id="26639742" id="C37791031" label-id="15356574" inwerking="2020-04-22" label="Artikel 5" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">5</nr>
+    <titel status="officieel">Verklaring bij de aanvraag</titel>
+  </kop>
+  <al>In de verklaring wordt door de aanvrager van algemene bijstand het volgende verklaard en de volgende informatie verstrekt:</al>
+  <lijst level="single" nr-sluiting="." start="1" type="expliciet">
+    <li bwb-ng-variabel-deel="/Hoofdstuk2/Artikel5/Onderdeela">
+      <li.nr>a.</li.nr>
+      <al>dat diens bedrijf of zelfstandig beroep financieel is geraakt als gevolg van de crisis in verband met COVID-19, voorzien van een toelichting;</al>
+    <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=2&amp;artikel=5&amp;o=a&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="o=a"/></jcis></meta-data></li>
+    <li bwb-ng-variabel-deel="/Hoofdstuk2/Artikel5/Onderdeelb">
+      <li.nr>b.</li.nr>
+      <al>dat hij voor de kalendermaanden waarover algemene bijstand wordt aangevraagd, verwacht een in aanmerking te nemen inkomen te hebben dat lager is dan de bijstandsnorm; en</al>
+    <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=2&amp;artikel=5&amp;o=b&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="o=b"/></jcis></meta-data></li>
+    <li bwb-ng-variabel-deel="/Hoofdstuk2/Artikel5/Onderdeelc">
+      <li.nr>c.</li.nr>
+      <al>voor de kalendermaanden waarover algemene bijstand wordt aangevraagd een opgave van het inkomen dat hij heeft verworven of verwacht te gaan verwerven.</al>
+    <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=2&amp;artikel=5&amp;o=c&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="o=c"/></jcis></meta-data></li>
+  </lijst>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;artikel=5&amp;g=2020-04-22" onderdeel="artikel=5" korte-verwijzing="1.0:c:BWBR0043402&amp;artikel=5"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=2&amp;artikel=5&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="artikel=5" korte-verwijzing="jci1.3:c:BWBR0043402&amp;artikel=5"/></jcis></meta-data></artikel><artikel bwb-ng-variabel-deel="/Hoofdstuk2/Artikel6" stam-id="15412743" versie-id="26639752" id="C37791041" label-id="15356584" inwerking="2020-04-22" label="Artikel 6" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">6</nr>
+    <titel status="officieel">Het inkomen</titel>
+  </kop>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk2/Artikel6/Lid1" label-id="15356584L1">
+    <lidnr status="officieel">1</lidnr>
+    <al>In afwijking van <extref doc="jci1.3:c:BWBR0015703&amp;artikel=32" label-id="5407854" verwijzing-id="2993581" bwb-id="BWBR0015703">artikel 32, eerste lid, onderdeel a, van de wet</extref> wordt niet als inkomen in aanmerking genomen:</al>
+    <lijst level="single" nr-sluiting="." start="1" type="expliciet">
+      <li bwb-ng-variabel-deel="/Hoofdstuk2/Artikel6/Lid1/Onderdeela">
+        <li.nr>a.</li.nr>
+        <al>het inkomen van de echtgenoot van de zelfstandige;</al>
+      <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=2&amp;artikel=6&amp;lid=1&amp;o=a&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="o=a"/></jcis></meta-data></li>
+      <li bwb-ng-variabel-deel="/Hoofdstuk2/Artikel6/Lid1/Onderdeelb">
+        <li.nr>b.</li.nr>
+        <al>een teruggave inkomstenbelasting en premies volksverzekeringen.</al>
+      <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=2&amp;artikel=6&amp;lid=1&amp;o=b&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="o=b"/></jcis></meta-data></li>
+    </lijst>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=2&amp;artikel=6&amp;lid=1&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=1"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk2/Artikel6/Lid2" label-id="15356584L2">
+    <lidnr status="officieel">2</lidnr>
+    <al>De verschuldigde inkomstenbelasting en premies volksverzekeringen over inkomen waarover geen loonbelasting is geheven wordt gesteld op 18 procent van dat inkomen.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=2&amp;artikel=6&amp;lid=2&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=2"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk2/Artikel6/Lid3" label-id="15356584L3">
+    <lidnr status="officieel">3</lidnr>
+    <al>Ten aanzien van de zelfstandige die het bedrijf of zelfstandig beroep uitoefent in de vorm van een besloten vennootschap of een coöperatieve vereniging met wettelijke aansprakelijkheid wordt onder inkomen mede verstaan de naar evenredigheid van het aantal zelfstandigen omgerekende nettowinst van deze rechtspersoon verminderd met de hierover verschuldigde vennootschapsbelasting.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=2&amp;artikel=6&amp;lid=3&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=3"/></jcis></meta-data></lid>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;artikel=6&amp;g=2020-04-22" onderdeel="artikel=6" korte-verwijzing="1.0:c:BWBR0043402&amp;artikel=6"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=2&amp;artikel=6&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="artikel=6" korte-verwijzing="jci1.3:c:BWBR0043402&amp;artikel=6"/></jcis></meta-data></artikel><artikel bwb-ng-variabel-deel="/Hoofdstuk2/Artikel7" stam-id="15412753" versie-id="26639762" id="C37791051" label-id="15356594" inwerking="2020-04-22" label="Artikel 7" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">7</nr>
+    <titel status="officieel">Het vermogen</titel>
+  </kop>
+  <al>In afwijking van <extref doc="jci1.3:c:BWBR0015703&amp;artikel=34" label-id="5407874" verwijzing-id="2993582" bwb-id="BWBR0015703">artikel 34 van de wet</extref> wordt vermogen niet in aanmerking genomen.</al>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;artikel=7&amp;g=2020-04-22" onderdeel="artikel=7" korte-verwijzing="1.0:c:BWBR0043402&amp;artikel=7"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=2&amp;artikel=7&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="artikel=7" korte-verwijzing="jci1.3:c:BWBR0043402&amp;artikel=7"/></jcis></meta-data></artikel><artikel bwb-ng-variabel-deel="/Hoofdstuk2/Artikel8" stam-id="15412763" versie-id="26639772" id="C37791061" label-id="15356604" inwerking="2020-04-22" label="Artikel 8" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">8</nr>
+    <titel status="officieel">Vorm van de bijstand</titel>
+  </kop>
+  <al>Algemene bijstand wordt naar de regels van dit besluit verleend in de vorm van een bedrag om niet.</al>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;artikel=8&amp;g=2020-04-22" onderdeel="artikel=8" korte-verwijzing="1.0:c:BWBR0043402&amp;artikel=8"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=2&amp;artikel=8&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="artikel=8" korte-verwijzing="jci1.3:c:BWBR0043402&amp;artikel=8"/></jcis></meta-data></artikel><artikel bwb-ng-variabel-deel="/Hoofdstuk2/Artikel9" stam-id="15412773" versie-id="26639782" id="C37791071" label-id="15356614" inwerking="2020-04-22" label="Artikel 9" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">9</nr>
+    <titel status="officieel">Duur en periode van de bijstand</titel>
+  </kop>
+  <al>De algemene bijstand wordt naar de regels van dit besluit verleend voor ten hoogste drie aaneengesloten kalendermaanden en ziet uitsluitend op de kalendermaanden maart tot en met augustus 2020.</al>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;artikel=9&amp;g=2020-04-22" onderdeel="artikel=9" korte-verwijzing="1.0:c:BWBR0043402&amp;artikel=9"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=2&amp;artikel=9&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="artikel=9" korte-verwijzing="jci1.3:c:BWBR0043402&amp;artikel=9"/></jcis></meta-data></artikel><meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;hoofdstuk=2&amp;g=2020-04-22" onderdeel="hoofdstuk=2" korte-verwijzing="1.0:c:BWBR0043402&amp;hoofdstuk=2"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=2&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="hoofdstuk=2" korte-verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=2"/></jcis></meta-data></hoofdstuk>
+      <hoofdstuk bwb-ng-variabel-deel="/Hoofdstuk3" stam-id="15412863" versie-id="26639872" id="C37791161" label-id="15356704" inwerking="2020-04-22" label="Hoofdstuk 3" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <kop>
+    <label>Hoofdstuk</label>
+    <nr status="officieel">3</nr>
+    <titel status="officieel">Bijstand voor bedrijfskapitaal</titel>
+  </kop><artikel bwb-ng-variabel-deel="/Hoofdstuk3/Artikel10" stam-id="15412793" versie-id="26639802" id="C37791091" label-id="15356634" inwerking="2020-04-22" label="Artikel 10" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">10</nr>
+    <titel status="officieel">Liquiditeitsprobleem</titel>
+  </kop>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk3/Artikel10/Lid1" label-id="15356634L1">
+    <lidnr status="officieel">1</lidnr>
+    <al>Bijstand ter voorziening in de behoefte aan bedrijfskapitaal kan worden verleend aan de zelfstandige die schriftelijk verklaart en aannemelijk maakt dat hij als gevolg van de crisis in verband met COVID-19 over onvoldoende direct beschikbare geldmiddelen beschikt om aan de financiële verplichtingen verbonden aan diens bedrijf of zelfstandig beroep te kunnen voldoen.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=10&amp;lid=1&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=1"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk3/Artikel10/Lid2" label-id="15356634L2">
+    <lidnr status="officieel">2</lidnr>
+    <al>Bijstand ter voorziening in de behoefte aan bedrijfskapitaal wordt niet verleend voor zover dat leidt tot een overschrijding van het de-minimisplafond, bedoeld in artikel 3, tweede lid, van de algemene de-minimisverordening.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=10&amp;lid=2&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=2"/></jcis></meta-data></lid>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;artikel=10&amp;g=2020-04-22" onderdeel="artikel=10" korte-verwijzing="1.0:c:BWBR0043402&amp;artikel=10"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=10&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="artikel=10" korte-verwijzing="jci1.3:c:BWBR0043402&amp;artikel=10"/></jcis></meta-data></artikel><artikel bwb-ng-variabel-deel="/Hoofdstuk3/Artikel11" stam-id="15412803" versie-id="26639812" id="C37791101" label-id="15356644" inwerking="2020-04-22" label="Artikel 11" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">11</nr>
+    <titel status="officieel">Zelfstandigen in een samenwerkingsverband</titel>
+  </kop>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk3/Artikel11/Lid1" label-id="15356644L1">
+    <lidnr status="officieel">1</lidnr>
+    <al>Bijstand ter voorziening in de behoefte aan bedrijfskapitaal aan de zelfstandige die het bedrijf of zelfstandig beroep uitoefent in de vorm van een maatschap, een vennootschap onder firma, een commanditaire vennootschap, een besloten vennootschap of een coöperatieve vereniging met wettelijke aansprakelijkheid, wordt slechts verleend indien hoofdelijke aansprakelijkheid voor de uit de bijstandsverlening voortvloeiende verplichtingen wordt aanvaard door:</al>
+    <lijst level="single" nr-sluiting="." start="1" type="expliciet">
+      <li bwb-ng-variabel-deel="/Hoofdstuk3/Artikel11/Lid1/Onderdeela">
+        <li.nr>a.</li.nr>
+        <al>alle vennoten of leden waarmee het bedrijf of zelfstandig beroep wordt uitgeoefend;</al>
+      <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=11&amp;lid=1&amp;o=a&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="o=a"/></jcis></meta-data></li>
+      <li bwb-ng-variabel-deel="/Hoofdstuk3/Artikel11/Lid1/Onderdeelb">
+        <li.nr>b.</li.nr>
+        <al>de besloten vennootschap en de coöperatieve vereniging met wettelijke aansprakelijkheid.</al>
+      <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=11&amp;lid=1&amp;o=b&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="o=b"/></jcis></meta-data></li>
+    </lijst>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=11&amp;lid=1&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=1"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk3/Artikel11/Lid2" label-id="15356644L2">
+    <lidnr status="officieel">2</lidnr>
+    <al>De eis van aanvaarding van hoofdelijke aansprakelijkheid geldt niet voor de commanditaire vennoot wiens inbreng uitsluitend uit kapitaal bestaat.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=11&amp;lid=2&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=2"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk3/Artikel11/Lid3" label-id="15356644L3">
+    <lidnr status="officieel">3</lidnr>
+    <al>Bijstand ter voorziening in de behoefte aan bedrijfskapitaal wordt niet verleend aan de vennoot in een maatschap die daar alleen arbeid inbrengt. Deze vennoot behoeft geen hoofdelijke aansprakelijkheid te aanvaarden voor de aan de andere vennoten verleende bijstand ter voorziening in de behoefte aan bedrijfskapitaal.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=11&amp;lid=3&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=3"/></jcis></meta-data></lid>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;artikel=11&amp;g=2020-04-22" onderdeel="artikel=11" korte-verwijzing="1.0:c:BWBR0043402&amp;artikel=11"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=11&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="artikel=11" korte-verwijzing="jci1.3:c:BWBR0043402&amp;artikel=11"/></jcis></meta-data></artikel><artikel bwb-ng-variabel-deel="/Hoofdstuk3/Artikel12" stam-id="15412813" versie-id="26639822" id="C37791111" label-id="15356654" inwerking="2020-04-22" label="Artikel 12" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">12</nr>
+    <titel status="officieel">Verklaring bij de aanvraag</titel>
+  </kop>
+  <al>In de verklaring wordt door de aanvrager van bijstand ter voorziening in de behoefte aan bedrijfskapitaal het volgende verklaard en de volgende informatie verstrekt:</al>
+  <lijst level="single" nr-sluiting="." start="1" type="expliciet">
+    <li bwb-ng-variabel-deel="/Hoofdstuk3/Artikel12/Onderdeela">
+      <li.nr>a.</li.nr>
+      <al>dat diens bedrijf of zelfstandig beroep financieel is geraakt als gevolg van de crisis in verband met COVID-19, voorzien van een toelichting;</al>
+    <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=12&amp;o=a&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="o=a"/></jcis></meta-data></li>
+    <li bwb-ng-variabel-deel="/Hoofdstuk3/Artikel12/Onderdeelb">
+      <li.nr>b.</li.nr>
+      <al>dat hij als gevolg van de crisis in verband met COVID-19 over onvoldoende direct beschikbare geldmiddelen beschikt om aan financiële verplichtingen verbonden aan diens bedrijf of zelfstandig beroep te kunnen voldoen, voorzien van een toelichting; en</al>
+    <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=12&amp;o=b&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="o=b"/></jcis></meta-data></li>
+    <li bwb-ng-variabel-deel="/Hoofdstuk3/Artikel12/Onderdeelc">
+      <li.nr>c.</li.nr>
+      <al>dat de omvang van de aangevraagde bijstand niet zal leiden tot een overschrijding van het de-minimisplafond, bedoeld in artikel 3, tweede lid, van de algemene de- minimisverordening.</al>
+    <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=12&amp;o=c&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="o=c"/></jcis></meta-data></li>
+  </lijst>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;artikel=12&amp;g=2020-04-22" onderdeel="artikel=12" korte-verwijzing="1.0:c:BWBR0043402&amp;artikel=12"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=12&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="artikel=12" korte-verwijzing="jci1.3:c:BWBR0043402&amp;artikel=12"/></jcis></meta-data></artikel><artikel bwb-ng-variabel-deel="/Hoofdstuk3/Artikel13" stam-id="15412823" versie-id="26639832" id="C37791121" label-id="15356664" inwerking="2020-04-22" label="Artikel 13" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">13</nr>
+    <titel status="officieel">Vorm van de bijstand</titel>
+  </kop>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk3/Artikel13/Lid1" label-id="15356664L1">
+    <lidnr status="officieel">1</lidnr>
+    <al>Bijstand ter voorziening in de behoefte aan bedrijfskapitaal wordt naar de regels van dit besluit verleend in de vorm van een rentedragende lening.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=13&amp;lid=1&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=1"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk3/Artikel13/Lid2" label-id="15356664L2">
+    <lidnr status="officieel">2</lidnr>
+    <al>Een voorschot als bedoeld in <extref doc="jci1.3:c:BWBR0015703&amp;artikel=52" label-id="5408144" verwijzing-id="2993583" bwb-id="BWBR0015703">artikel 52 van de wet</extref> kan geen betrekking hebben op bijstand ter voorziening in de behoefte aan bedrijfskapitaal.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=13&amp;lid=2&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=2"/></jcis></meta-data></lid>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;artikel=13&amp;g=2020-04-22" onderdeel="artikel=13" korte-verwijzing="1.0:c:BWBR0043402&amp;artikel=13"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=13&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="artikel=13" korte-verwijzing="jci1.3:c:BWBR0043402&amp;artikel=13"/></jcis></meta-data></artikel><artikel bwb-ng-variabel-deel="/Hoofdstuk3/Artikel14" stam-id="15412833" versie-id="26639842" id="C37791131" label-id="15356674" inwerking="2020-04-22" label="Artikel 14" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">14</nr>
+    <titel status="officieel">Rente en looptijd van de lening</titel>
+  </kop>
+  <al>Bijstand ter voorziening in de behoefte aan bedrijfskapitaal wordt verleend met inachtneming van het volgende:</al>
+  <lijst level="single" nr-sluiting="." start="1" type="expliciet">
+    <li bwb-ng-variabel-deel="/Hoofdstuk3/Artikel14/Onderdeela">
+      <li.nr>a.</li.nr>
+      <al>de rente van de lening bedraagt 2 procent per jaar gedurende de gehele looptijd van de lening;</al>
+    <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=14&amp;o=a&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="o=a"/></jcis></meta-data></li>
+    <li bwb-ng-variabel-deel="/Hoofdstuk3/Artikel14/Onderdeelb">
+      <li.nr>b.</li.nr>
+      <al>de looptijd van de lening is ten hoogste drie jaar.</al>
+    <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=14&amp;o=b&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="o=b"/></jcis></meta-data></li>
+  </lijst>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;artikel=14&amp;g=2020-04-22" onderdeel="artikel=14" korte-verwijzing="1.0:c:BWBR0043402&amp;artikel=14"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=14&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="artikel=14" korte-verwijzing="jci1.3:c:BWBR0043402&amp;artikel=14"/></jcis></meta-data></artikel><artikel bwb-ng-variabel-deel="/Hoofdstuk3/Artikel15" stam-id="15412843" versie-id="26639852" id="C37791141" label-id="15356684" inwerking="2020-04-22" label="Artikel 15" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">15</nr>
+    <titel status="officieel">Hoogte van de lening</titel>
+  </kop>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk3/Artikel15/Lid1" label-id="15356684L1">
+    <lidnr status="officieel">1</lidnr>
+    <al>De bijstand ter voorziening in de behoefte aan bedrijfskapitaal bedraagt ten hoogste € 10.157,00. Dit bedrag geldt per bedrijf of zelfstandig beroep.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=15&amp;lid=1&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=1"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk3/Artikel15/Lid2" label-id="15356684L2">
+    <lidnr status="officieel">2</lidnr>
+    <al>Als de bijstand ter voorziening in de behoefte aan bedrijfskapitaal wordt gevraagd door gehuwden die beide zelfstandige zijn, kan per echtgenoot voor diens bedrijf of zelfstandig beroep een lening worden verleend van ten hoogste € 10.157,00.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=15&amp;lid=2&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=2"/></jcis></meta-data></lid>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;artikel=15&amp;g=2020-04-22" onderdeel="artikel=15" korte-verwijzing="1.0:c:BWBR0043402&amp;artikel=15"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=15&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="artikel=15" korte-verwijzing="jci1.3:c:BWBR0043402&amp;artikel=15"/></jcis></meta-data></artikel><artikel bwb-ng-variabel-deel="/Hoofdstuk3/Artikel16" stam-id="15412853" versie-id="26639862" id="C37791151" label-id="15356694" inwerking="2020-04-22" label="Artikel 16" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">16</nr>
+    <titel status="officieel">Verplichtingen verbonden aan de lening</titel>
+  </kop>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk3/Artikel16/Lid1" label-id="15356694L1">
+    <lidnr status="officieel">1</lidnr>
+    <al>Onverminderd <extref doc="jci1.3:c:BWBR0005537&amp;artikel=4:86" label-id="10066684" verwijzing-id="2993584" bwb-id="BWBR0005537">artikel 4:86 van de Algemene wet bestuursrecht</extref> legt het college in de beschikking waarmee de bijstand ter voorziening in de behoefte aan bedrijfskapitaal wordt toegekend in ieder geval vast:</al>
+    <lijst level="single" nr-sluiting="." start="1" type="expliciet">
+      <li bwb-ng-variabel-deel="/Hoofdstuk3/Artikel16/Lid1/Onderdeela">
+        <li.nr>a.</li.nr>
+        <al>de verplichting tot betaling van rente en aflossing alsmede de betalingstermijnen;</al>
+      <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=16&amp;lid=1&amp;o=a&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="o=a"/></jcis></meta-data></li>
+      <li bwb-ng-variabel-deel="/Hoofdstuk3/Artikel16/Lid1/Onderdeelb">
+        <li.nr>b.</li.nr>
+        <al>dat het bedrag van de lening terstond kan worden opgeëist:</al>
+      <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=16&amp;lid=1&amp;o=b&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="o=b"/></jcis></meta-data></li>
+      <li bwb-ng-variabel-deel="/Hoofdstuk3/Artikel16/Lid1/Onderdeelc">
+        <li.nr>c.</li.nr>
+        <lijst level="single" nr-sluiting="." start="1" type="expliciet">
+          <li bwb-ng-variabel-deel="/Hoofdstuk3/Artikel16/Lid1/Onderdeelc/Onderdeel1">
+            <li.nr>1°.</li.nr>
+            <al>indien de zelfstandige de betalingsverplichting niet nakomt;</al>
+          <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=16&amp;lid=1&amp;o=c&amp;o=1&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="o=1"/></jcis></meta-data></li>
+          <li bwb-ng-variabel-deel="/Hoofdstuk3/Artikel16/Lid1/Onderdeelc/Onderdeel2">
+            <li.nr>2°.</li.nr>
+            <al>op het moment dat de zelfstandige het bedrijf of zelfstandig beroep overdraagt of beëindigt;</al>
+          <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=16&amp;lid=1&amp;o=c&amp;o=2&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="o=2"/></jcis></meta-data></li>
+          <li bwb-ng-variabel-deel="/Hoofdstuk3/Artikel16/Lid1/Onderdeelc/Onderdeel3">
+            <li.nr>3°.</li.nr>
+            <al>ingeval van surseance van betaling of faillissement van de zelfstandige, van één van de vennoten of leden waarmee het bedrijf of zelfstandig beroep in een samenwerkingsverband wordt uitgeoefend, of van de rechtspersoon.</al>
+          <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=16&amp;lid=1&amp;o=c&amp;o=3&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="o=3"/></jcis></meta-data></li>
+        </lijst>
+      <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=16&amp;lid=1&amp;o=c&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="o=c"/></jcis></meta-data></li>
+    </lijst>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=16&amp;lid=1&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=1"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk3/Artikel16/Lid2" label-id="15356694L2">
+    <lidnr status="officieel">2</lidnr>
+    <al>De verplichting tot betaling van rente en aflossing vangt aan op 1 januari 2021.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=16&amp;lid=2&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=2"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk3/Artikel16/Lid3" label-id="15356694L3">
+    <lidnr status="officieel">3</lidnr>
+    <al>Het college kan aan het verlenen van de bijstand ter voorziening in de behoefte aan bedrijfskapitaal verplichtingen verbinden die zijn gericht op het verkrijgen van meerdere zekerheid voor de nakoming van de aan deze bijstand verbonden rente- en aflossingsverplichtingen.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=16&amp;lid=3&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=3"/></jcis></meta-data></lid>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;artikel=16&amp;g=2020-04-22" onderdeel="artikel=16" korte-verwijzing="1.0:c:BWBR0043402&amp;artikel=16"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;artikel=16&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="artikel=16" korte-verwijzing="jci1.3:c:BWBR0043402&amp;artikel=16"/></jcis></meta-data></artikel><meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;hoofdstuk=3&amp;g=2020-04-22" onderdeel="hoofdstuk=3" korte-verwijzing="1.0:c:BWBR0043402&amp;hoofdstuk=3"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="hoofdstuk=3" korte-verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=3"/></jcis></meta-data></hoofdstuk>
+      <hoofdstuk bwb-ng-variabel-deel="/Hoofdstuk4" stam-id="15412893" versie-id="26639902" id="C37791191" label-id="15356734" inwerking="2020-04-22" label="Hoofdstuk 4" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <kop>
+    <label>Hoofdstuk</label>
+    <nr status="officieel">4</nr>
+    <titel status="officieel">Ministeriële regeling tot uitbreiding en verlenging</titel>
+  </kop><artikel bwb-ng-variabel-deel="/Hoofdstuk4/Artikel17" stam-id="15412873" versie-id="26639882" id="C37791171" label-id="15356714" inwerking="2020-04-22" label="Artikel 17" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">17</nr>
+    <titel status="officieel">Uitbreiding kring van rechthebbenden</titel>
+  </kop>
+  <al>Bij ministeriële regeling kunnen personen worden aangewezen aan wie mede algemene bijstand of bijstand ter voorziening in de behoefte aan bedrijfskapitaal op grond van dit besluit kan worden verleend. Daarbij kan worden afgeweken van het begrip zelfstandige en kunnen van dit besluit afwijkende regels worden gesteld als dat nodig is voor een goede uitvoering.</al>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;artikel=17&amp;g=2020-04-22" onderdeel="artikel=17" korte-verwijzing="1.0:c:BWBR0043402&amp;artikel=17"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=4&amp;artikel=17&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="artikel=17" korte-verwijzing="jci1.3:c:BWBR0043402&amp;artikel=17"/></jcis></meta-data></artikel><artikel bwb-ng-variabel-deel="/Hoofdstuk4/Artikel18" stam-id="15412883" versie-id="26639892" id="C37791181" label-id="15356724" inwerking="2020-04-22" label="Artikel 18" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">18</nr>
+    <titel status="officieel">Verlenging van de duur van de regeling</titel>
+  </kop>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk4/Artikel18/Lid1" label-id="15356724L1">
+    <lidnr status="officieel">1</lidnr>
+    <al>Bij ministeriële regeling kan het aanvraagtijdvak, bedoeld in <intref doc="jci1.3:c:BWBR0043402&amp;hoofdstuk=1&amp;artikel=3&amp;z=2020-04-22&amp;g=2020-04-22" label-id="15356544" verwijzing-id="2993590" bwb-id="BWBR0043402" bwb-ng-variabel-deel="/Hoofdstuk1/Artikel3">artikel 3, tweede lid</intref>, alsmede de duur en periode, bedoeld in <intref doc="jci1.3:c:BWBR0043402&amp;hoofdstuk=2&amp;artikel=9&amp;z=2020-04-22&amp;g=2020-04-22" label-id="15356614" verwijzing-id="2993591" bwb-id="BWBR0043402" bwb-ng-variabel-deel="/Hoofdstuk2/Artikel9">artikel 9</intref>, worden verlengd met ten hoogste drie maanden voor zover dat nodig is in verband met de gevolgen van de crisis in verband met COVID-19.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=4&amp;artikel=18&amp;lid=1&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=1"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk4/Artikel18/Lid2" label-id="15356724L2">
+    <lidnr status="officieel">2</lidnr>
+    <al>In de ministeriële regeling, bedoeld in het eerste lid, kunnen regels worden gesteld met betrekking tot het recht op bijstand waarbij kan worden afgeweken van dit besluit.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=4&amp;artikel=18&amp;lid=2&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=2"/></jcis></meta-data></lid>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;artikel=18&amp;g=2020-04-22" onderdeel="artikel=18" korte-verwijzing="1.0:c:BWBR0043402&amp;artikel=18"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=4&amp;artikel=18&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="artikel=18" korte-verwijzing="jci1.3:c:BWBR0043402&amp;artikel=18"/></jcis></meta-data></artikel><meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;hoofdstuk=4&amp;g=2020-04-22" onderdeel="hoofdstuk=4" korte-verwijzing="1.0:c:BWBR0043402&amp;hoofdstuk=4"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=4&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="hoofdstuk=4" korte-verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=4"/></jcis></meta-data></hoofdstuk>
+      <hoofdstuk bwb-ng-variabel-deel="/Hoofdstuk5" stam-id="15412933" versie-id="26639942" id="C37791231" label-id="15356774" inwerking="2020-04-22" label="Hoofdstuk 5" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <kop>
+    <label>Hoofdstuk</label>
+    <nr status="officieel">5</nr>
+    <titel status="officieel">Financiering en verantwoording</titel>
+  </kop><artikel bwb-ng-variabel-deel="/Hoofdstuk5/Artikel19" stam-id="15412903" versie-id="26639912" id="C37791201" label-id="15356744" inwerking="2020-04-22" label="Artikel 19" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">19</nr>
+    <titel status="officieel">Vergoeding</titel>
+  </kop>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk5/Artikel19/Lid1" label-id="15356744L1">
+    <lidnr status="officieel">1</lidnr>
+    <al>Onze Minister vergoedt ten laste van ’s Rijks kas aan het college:</al>
+    <lijst level="single" nr-sluiting="." start="1" type="expliciet">
+      <li bwb-ng-variabel-deel="/Hoofdstuk5/Artikel19/Lid1/Onderdeela">
+        <li.nr>a.</li.nr>
+        <al>100% van de kosten van algemene bijstand en bijstand ter voorziening in de behoefte aan bedrijfskapitaal, voor zover de algemene bijstand niet bij wijze van voorschot op grond van <extref doc="jci1.3:c:BWBR0015703&amp;artikel=52" label-id="5408144" verwijzing-id="2993585" bwb-id="BWBR0015703">artikel 52 van de wet</extref> is verleend; en</al>
+      <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=5&amp;artikel=19&amp;lid=1&amp;o=a&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="o=a"/></jcis></meta-data></li>
+      <li bwb-ng-variabel-deel="/Hoofdstuk5/Artikel19/Lid1/Onderdeelb">
+        <li.nr>b.</li.nr>
+        <al>een bij ministeriële regeling te bepalen bedrag per besluit op een aanvraag om algemene bijstand en bijstand ter voorziening in de behoefte aan bedrijfskapitaal.</al>
+      <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=5&amp;artikel=19&amp;lid=1&amp;o=b&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="o=b"/></jcis></meta-data></li>
+    </lijst>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=5&amp;artikel=19&amp;lid=1&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=1"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk5/Artikel19/Lid2" label-id="15356744L2">
+    <lidnr status="officieel">2</lidnr>
+    <al>Onder kosten als bedoeld in het eerste lid, onderdeel a, wordt verstaan de lasten in een kalenderjaar verminderd met de baten in dat jaar in verband met de door het college verleende algemene bijstand en bijstand ter voorziening in de behoefte aan bedrijfskapitaal.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=5&amp;artikel=19&amp;lid=2&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=2"/></jcis></meta-data></lid>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;artikel=19&amp;g=2020-04-22" onderdeel="artikel=19" korte-verwijzing="1.0:c:BWBR0043402&amp;artikel=19"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=5&amp;artikel=19&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="artikel=19" korte-verwijzing="jci1.3:c:BWBR0043402&amp;artikel=19"/></jcis></meta-data></artikel><artikel bwb-ng-variabel-deel="/Hoofdstuk5/Artikel20" stam-id="15412913" versie-id="26639922" id="C37791211" label-id="15356754" inwerking="2020-04-22" label="Artikel 20" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">20</nr>
+    <titel status="officieel">Voorschot op de vergoeding</titel>
+  </kop>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk5/Artikel20/Lid1" label-id="15356754L1">
+    <lidnr status="officieel">1</lidnr>
+    <al>Onze Minister verleent voorschotten op de vergoeding, bedoeld in <intref doc="jci1.3:c:BWBR0043402&amp;hoofdstuk=5&amp;artikel=19&amp;z=2020-04-22&amp;g=2020-04-22" label-id="15356744" verwijzing-id="2993592" bwb-id="BWBR0043402" bwb-ng-variabel-deel="/Hoofdstuk5/Artikel19">artikel 19</intref>.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=5&amp;artikel=20&amp;lid=1&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=1"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk5/Artikel20/Lid2" label-id="15356754L2">
+    <lidnr status="officieel">2</lidnr>
+    <al>De voorschotten worden afgestemd op de landelijk te verwachte kosten, waarbij deze worden verdeeld over gemeenten op basis van het aantal zelfstandigen per gemeente.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=5&amp;artikel=20&amp;lid=2&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=2"/></jcis></meta-data></lid>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;artikel=20&amp;g=2020-04-22" onderdeel="artikel=20" korte-verwijzing="1.0:c:BWBR0043402&amp;artikel=20"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=5&amp;artikel=20&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="artikel=20" korte-verwijzing="jci1.3:c:BWBR0043402&amp;artikel=20"/></jcis></meta-data></artikel><artikel bwb-ng-variabel-deel="/Hoofdstuk5/Artikel21" stam-id="15412923" versie-id="26639932" id="C37791221" label-id="15356764" inwerking="2020-04-22" label="Artikel 21" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">21</nr>
+    <titel status="officieel">Vaststelling van de vergoeding</titel>
+  </kop>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk5/Artikel21/Lid1" label-id="15356764L1">
+    <lidnr status="officieel">1</lidnr>
+    <al>Onze Minister stelt de vergoeding, bedoeld in <intref doc="jci1.3:c:BWBR0043402&amp;hoofdstuk=5&amp;artikel=19&amp;z=2020-04-22&amp;g=2020-04-22" label-id="15356744" verwijzing-id="2993593" bwb-id="BWBR0043402" bwb-ng-variabel-deel="/Hoofdstuk5/Artikel19">artikel 19</intref>, vast binnen een jaar na ontvangst door Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties van de verantwoordingsinformatie, bedoeld in <extref doc="jci1.3:c:BWBR0008290&amp;artikel=17a" label-id="9659044" verwijzing-id="2993586" bwb-id="BWBR0008290">artikel 17a, eerste lid, van de Financiële-verhoudingswet</extref>.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=5&amp;artikel=21&amp;lid=1&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=1"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk5/Artikel21/Lid2" label-id="15356764L2">
+    <lidnr status="officieel">2</lidnr>
+    <al>De kosten van algemene bijstand en bijstand ter voorziening in de behoefte aan bedrijfskapitaal worden bij de vaststelling buiten aanmerking gelaten indien deze kosten blijkens het verslag van bevindingen, bedoeld in <extref doc="jci1.3:c:BWBR0005416&amp;artikel=213" label-id="2895254" verwijzing-id="2993587" bwb-id="BWBR0005416">artikel 213, vierde lid, van de Gemeentewet</extref>, dat deel uit maakt van de informatie, bedoeld in <extref doc="jci1.3:c:BWBR0008290&amp;artikel=17a" label-id="9659044" verwijzing-id="2993588" bwb-id="BWBR0008290">artikel 17a, eerste lid, van de Financiële-verhoudingswet</extref>, als fout of onzeker worden aangemerkt.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=5&amp;artikel=21&amp;lid=2&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=2"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk5/Artikel21/Lid3" label-id="15356764L3">
+    <lidnr status="officieel">3</lidnr>
+    <al>Indien de toepassing van het tweede lid naar het oordeel van Onze Minister leidt tot een onbillijkheid van overwegende aard kan hij de kosten die als fout of onzeker worden aangemerkt, in afwijking van het tweede lid, geheel of gedeeltelijk in aanmerking nemen bij de vaststelling.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=5&amp;artikel=21&amp;lid=3&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=3"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk5/Artikel21/Lid4" label-id="15356764L4">
+    <lidnr status="officieel">4</lidnr>
+    <al>Indien de verantwoordingsinformatie, bedoeld in het eerste lid, niet binnen achttien maanden na het kalenderjaar waarop het betrekking heeft is ontvangen door Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties wordt de vergoeding, bedoeld in <intref doc="jci1.3:c:BWBR0043402&amp;hoofdstuk=5&amp;artikel=19&amp;z=2020-04-22&amp;g=2020-04-22" label-id="15356744" verwijzing-id="2993594" bwb-id="BWBR0043402" bwb-ng-variabel-deel="/Hoofdstuk5/Artikel19">artikel 19</intref>, ambtshalve door Onze Minister vastgesteld.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=5&amp;artikel=21&amp;lid=4&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=4"/></jcis></meta-data></lid>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;artikel=21&amp;g=2020-04-22" onderdeel="artikel=21" korte-verwijzing="1.0:c:BWBR0043402&amp;artikel=21"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=5&amp;artikel=21&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="artikel=21" korte-verwijzing="jci1.3:c:BWBR0043402&amp;artikel=21"/></jcis></meta-data></artikel><meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;hoofdstuk=5&amp;g=2020-04-22" onderdeel="hoofdstuk=5" korte-verwijzing="1.0:c:BWBR0043402&amp;hoofdstuk=5"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=5&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="hoofdstuk=5" korte-verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=5"/></jcis></meta-data></hoofdstuk>
+      <hoofdstuk bwb-ng-variabel-deel="/Hoofdstuk6" stam-id="15412963" versie-id="26639972" id="C37791261" label-id="15356804" inwerking="2020-04-22" label="Hoofdstuk 6" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <kop>
+    <label>Hoofdstuk</label>
+    <nr status="officieel">6</nr>
+    <titel status="officieel">Slotbepalingen</titel>
+  </kop><artikel bwb-ng-variabel-deel="/Hoofdstuk6/Artikel22" stam-id="15412943" versie-id="26639952" id="C37791241" label-id="15356784" inwerking="2020-04-22" label="Artikel 22" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">22</nr>
+    <titel status="officieel">Inwerkingtreding</titel>
+  </kop>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk6/Artikel22/Lid1" label-id="15356784L1">
+    <lidnr status="officieel">1</lidnr>
+    <al>Dit besluit treedt in werking met ingang van de dag na de datum van uitgifte van het Staatsblad waarin het wordt geplaatst en werkt terug tot en met 1 maart 2020.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=6&amp;artikel=22&amp;lid=1&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=1"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Hoofdstuk6/Artikel22/Lid2" label-id="15356784L2">
+    <lidnr status="officieel">2</lidnr>
+    <al>Dit besluit vervalt op 1 juli 2025 met dien verstande dat het besluit zoals dat luidde op 30 juni 2025 van toepassing blijft op de zelfstandige die op grond van dit besluit bijstand ontvangt of heeft ontvangen en op de financiële afwikkeling van het besluit.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=6&amp;artikel=22&amp;lid=2&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="lid=2"/></jcis></meta-data></lid>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;artikel=22&amp;g=2020-04-22" onderdeel="artikel=22" korte-verwijzing="1.0:c:BWBR0043402&amp;artikel=22"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=6&amp;artikel=22&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="artikel=22" korte-verwijzing="jci1.3:c:BWBR0043402&amp;artikel=22"/></jcis></meta-data></artikel><artikel bwb-ng-variabel-deel="/Hoofdstuk6/Artikel23" stam-id="15412953" versie-id="26639962" id="C37791251" label-id="15356794" inwerking="2020-04-22" label="Artikel 23" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">23</nr>
+    <titel status="officieel">Citeertitel</titel>
+  </kop>
+  <al>Dit besluit wordt aangehaald als: Tijdelijke overbruggingsregeling zelfstandig ondernemers.</al>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;artikel=23&amp;g=2020-04-22" onderdeel="artikel=23" korte-verwijzing="1.0:c:BWBR0043402&amp;artikel=23"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=6&amp;artikel=23&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="artikel=23" korte-verwijzing="jci1.3:c:BWBR0043402&amp;artikel=23"/></jcis></meta-data></artikel><meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;hoofdstuk=6&amp;g=2020-04-22" onderdeel="hoofdstuk=6" korte-verwijzing="1.0:c:BWBR0043402&amp;hoofdstuk=6"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=6&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="hoofdstuk=6" korte-verwijzing="jci1.3:c:BWBR0043402&amp;hoofdstuk=6"/></jcis></meta-data></hoofdstuk>
+    </wettekst>
+    <wetsluiting bwb-ng-variabel-deel="/SlotformulierEnOndertekening" stam-id="15412973" versie-id="26639982" id="C37791271" label-id="15356814" inwerking="2020-04-22" bron="Stb.2020-118" effect="nieuwe-regeling" ondertekening_bron="2020-04-17" publicatie_bron="2020-04-21" publicatie_iwt="2020-04-21" status="goed">
+  <slotformulering>
+    <al>Lasten en bevelen dat dit besluit met de daarbij behorende nota van toelichting in het Staatsblad zal worden geplaatst.</al>
+  </slotformulering>
+  <gegeven>
+    <dagtekening>
+      <plaats>’s-Gravenhage</plaats>
+      <datum isodatum="2020-04-17">17 april 2020</datum>
+    </dagtekening>
+    <koning>Willem-Alexander</koning>
+  </gegeven>
+  <ondertekening>
+    <functie>De Staatssecretaris van Sociale Zaken en Werkgelegenheid,</functie>
+    <naam>
+      <voornaam>T. van</voornaam>
+      <achternaam>Ark</achternaam>
+    </naam>
+  </ondertekening>
+  <uitgifte>
+    <datum isodatum="2020-04-21">de <nadruk type="cur">eenentwintigste</nadruk> april 2020</datum>
+    <ondertekening>
+      <functie>De Minister van Justitie en Veiligheid,</functie>
+      <naam>
+        <voornaam>F.B.J.</voornaam>
+        <achternaam>Grapperhaus</achternaam>
+      </naam>
+    </ondertekening>
+  </uitgifte>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata></meta-data></wetsluiting>
+  </wet-besluit>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2020-118"><publicatiejaar>2020</publicatiejaar><publicatienr>118</publicatienr><uitgiftedatum isodatum="2020-04-21">21-04-2020</uitgiftedatum><ondertekeningsdatum isodatum="2020-04-17">17-04-2020</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2020-04-22">22-04-2020</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2020-03-01">01-03-2020</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0043402&amp;g=2020-04-22" onderdeel="wetgeving" korte-verwijzing="1.0:c:BWBR0043402"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0043402&amp;z=2020-04-22&amp;g=2020-04-22" onderdeel="wetgeving" korte-verwijzing="jci1.3:c:BWBR0043402"/></jcis></meta-data></wetgeving></toestand>
