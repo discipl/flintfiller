@@ -28,39 +28,11 @@ def parse_xml_artikelen(xml_file, output_file):
     with open(xml_file, encoding="utf8") as xml:
         read = xml.read()
         xml_dict = xmltodict.parse(remove_unicodes(read))
-        # If you want just the text out of the xml, uncomment the following part and
-        # replace xml_dict below with artikelen
-        #
-        # artikelen = {}
-        # if "wet-besluit" in xml_dict['toestand']['wetgeving'].keys():
-        #     for hoofdstuk in xml_dict['toestand']['wetgeving']['wet-besluit']['wettekst']['hoofdstuk']:
-        #         if 'artikel' in hoofdstuk.keys():
-        #             get_text_artikelen(hoofdstuk, artikelen)
-        #         if 'afdeling' in hoofdstuk.keys():
-        #             for afdeling in hoofdstuk['afdeling']:
-        #                 if 'artikel' in afdeling.keys():
-        #                     get_text_artikelen(afdeling, artikelen)
-        # elif "regeling" in xml_dict['toestand']['wetgeving'].keys():
-        #     print('this XML is differently build and the text cannot be extracted by itself')
-        # else:
-        #     print('this XML is differently build and the text cannot be extracted by itself')
     with open(output_file, 'w') as file:
         print('Writing dictionary to json file')
         file.write(json.dumps(xml_dict))
+    return xml_dict
 
 
 def remove_unicodes(read):
     return read.encode('ascii', 'ignore').decode('unicode_escape')
-
-
-def get_text_artikelen(afdeling, artikelen):
-    for artikel in afdeling['artikel']:
-        if isinstance(artikel, dict):
-            if 'lijst' in artikel.keys():
-                for regel in artikel['lijst']['li']:
-                    if isinstance(regel['al'], str):
-                        artikelen[regel['@bwb-ng-variabel-deel']] = regel['al']
-                    else:
-                        artikelen[regel['@bwb-ng-variabel-deel']] = regel['al']['#text']
-            if 'al' in artikel.keys() and isinstance(artikel['al'], str):
-                artikelen[artikel['@bwb-ng-variabel-deel']] = artikel['al']

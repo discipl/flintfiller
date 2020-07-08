@@ -2,14 +2,24 @@
 
 This project is created to automatically create Flint Frames. 
 
-### Usage
+## Usage
 
 This project contains a small set of Dutch laws in xml format that are already processed and ready to view.
 You can find the files under data, in different formats including flint frames.
 If you want to run the code on a new xml, add your xml file and go to the project location on your computer 
-and run the following command (example):
+and follow the following steps:
 
-#### Commandline usage:
+### Getting started
+- `pip install poetry`
+- `poetry config virtualenvs.in-project true`
+- `poetry install`
+
+- Go to project settings of your editor and set the created virtual environment as project interpreter
+
+#### Commandline usage of flintfiller
+
+After installation of the dependencies through poetry you can enter the following example command:
+
 ``` bash
 python flintfiller/flintfiller.py 
 -x data/xml_files/BWBR0011823_2019-02-27_(Vreemdelingenwet).xml 
@@ -30,7 +40,7 @@ Arguments are not required, for instance you can pass only an xml and a location
 parse the xml to a dictionary. If you already have a POS tagged dataframe in the right format, you can also pass that,
 and pass a location for the flint frames output. 
 
-Before you can start you have to install the requirements using: pip install -r requirements.txt
+For more technical information see the technical-README.md
 
 
 ## CSV

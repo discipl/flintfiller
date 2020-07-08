@@ -19,230 +19,255 @@
     @author: Maaike de Boer, Roos Bakker
     @contact: maaike.deboer@tno.nl, roos.bakker@tno.nl
 """
+import copy
+import json
 
 import pandas as pd
-import json
-from typing import TypeVar, Union
-
-PandasDataFrame = TypeVar('pandas.core.frame.Dataframe')
+from typing import Union, List
 
 
-def dict_to_dataframe(json_dict_file, output_df) -> PandasDataFrame:
-    with open(json_dict_file, encoding="utf8") as json_dict:
-        my_dict = json.load(json_dict)
-        print('Writing dataframe to csv file')
-        dn = get_content_wet(my_dict)
-        dn.to_csv(output_df)
-        return dn
+# Todo: add docstrings
 
 
-def get_content_wet(my_dict: dict) -> PandasDataFrame:
-    wettexten = []
-    artikel_nummers = []
-    jcis = []
-    versiedata = []
+class MetaData:
+    def __init__(self, versie: str = '',
+                 jci: str = ''):
+        self.versie = versie
+        self.jci = jci
+
+
+class DataFrameRegel:
+    def __init__(self, brontekst: str,
+                 aanduidingen: List[str],
+                 meta_data: MetaData = MetaData(),
+                 zin: int = ''):
+        self.meta_data = meta_data
+        self.zin = zin
+        self.brontekst = brontekst
+        self.nummer = ''
+        self.lid = ''
+        self.opsomming1 = ''
+        self.opsomming2 = ''
+        self.opsomming3 = ''
+        for i, aanduiding in enumerate(aanduidingen):
+            if i == 0:
+                self.nummer = aanduiding
+            elif i == 1:
+                self.lid = aanduiding
+            elif i == 2:
+                self.opsomming1 = aanduiding
+            elif i == 3:
+                self.opsomming2 = aanduiding
+            else:
+                self.opsomming3 = aanduiding
+
+    def to_dict(self):
+        return {
+            'Nummer': self.nummer,
+            'Lid': self.lid,
+            'Opsomming niveau 1': self.opsomming1,
+            'Opsomming niveau 2': self.opsomming2,
+            'Opsomming niveau 3': self.opsomming3,
+            'Zin': self.zin,
+            'Brontekst': self.brontekst,
+            'Versie': self.meta_data.versie,
+            'jci 1.3': self.meta_data.jci
+        }
+
+    def __repr__(self):
+        return f"<{self.__class__}, {self.__dict__}>"
+
+
+def dict_to_dataframe(my_dict, output_df) -> pd.DataFrame:
+    dn = process_wet(my_dict)
+    df = to_dataframe(dn)
+    df.to_csv(output_df)
+    return df
+
+
+def to_dataframe(regels: List[DataFrameRegel]) -> pd.DataFrame:
+    records = pd.DataFrame.from_records([regel.to_dict() for regel in regels])
+    print(records.head())
+    return records
+
+
+def process_wet(my_dict: dict) -> List[DataFrameRegel]:
+    regels: List[DataFrameRegel] = []
+
     if "wet-besluit" in my_dict['toestand']['wetgeving'].keys():
-        get_content_wetbesluit(artikel_nummers, jcis, my_dict, versiedata, wettexten)
+        regels.extend(process_wetbesluit(my_dict['toestand']['wetgeving']))
     elif "regeling" in my_dict['toestand']['wetgeving'].keys():
-        get_content_regeling(artikel_nummers, jcis, my_dict, versiedata, wettexten)
+        regels.extend(process_regeling(my_dict['toestand']['wetgeving']['regeling']))
     else:
-        print(
+        raise ValueError(
             'this dictionary has text under unknown keys and cannot properly be parsed to a dataframe. Your '
             'dataframe might have errors or even be empty.')
-    df0 = pd.DataFrame(artikel_nummers, columns=['artikelnr:'])
-    df1 = pd.DataFrame(wettexten, columns=['text:'])
-    df2 = pd.DataFrame(jcis, columns=['jci1.0:', 'jci1.3:'])
-    df3 = pd.DataFrame(versiedata, columns=['versie:'])
-    wet_df = pd.concat([df0, df1, df2, df3], axis=1, sort=False)
-    # wet_df.set_index('artikelnr:', inplace=True)
-    return wet_df
+    return regels
 
 
-def get_content_regeling(artikel_nummers, jcis, my_dict, versiedata, wettexten):
-    if 'artikel' in my_dict['toestand']['wetgeving']['regeling']['regeling-tekst'].keys():
-        for artikel in my_dict['toestand']['wetgeving']['regeling']['regeling-tekst']['artikel']:
-            get_content_artikel(artikel, wettexten, artikel_nummers, jcis, versiedata)
-    elif 'hoofdstuk' in my_dict['toestand']['wetgeving']['regeling']['regeling-tekst'].keys():
-        get_content_hoofdstuk(artikel_nummers, jcis, my_dict, versiedata, wettexten)
-
-
-def get_content_hoofdstuk(artikel_nummers, jcis, my_dict, versiedata, wettexten):
-    for hoofdstuk in my_dict['toestand']['wetgeving']['regeling']['regeling-tekst']['hoofdstuk']:
+def process_wetbesluit(my_dict) -> List[DataFrameRegel]:
+    regels: List[DataFrameRegel] = []
+    for hoofdstuk in my_dict['wet-besluit']['wettekst']['hoofdstuk']:
         if 'artikel' in hoofdstuk.keys():
-            get_content_artikel(hoofdstuk['artikel'], wettexten, artikel_nummers, jcis, versiedata)
+            regels.extend(process_artikel(hoofdstuk['artikel']))
         elif 'afdeling' in hoofdstuk.keys():
-            get_content_afdeling(hoofdstuk, wettexten, artikel_nummers, jcis, versiedata)
+            for afdeling in hoofdstuk['afdeling']:
+                regels.extend(process_afdeling(afdeling))
         elif 'paragraaf' in hoofdstuk.keys():
-            get_content_paragraaf(hoofdstuk['paragraaf'], wettexten, artikel_nummers, jcis, versiedata)
+            regels.extend(process_paragraaf(hoofdstuk['paragraaf']))
+    return regels
 
 
-def get_content_wetbesluit(artikel_nummers, jcis, my_dict, versiedata, wettexten):
-    for hoofdstuk in my_dict['toestand']['wetgeving']['wet-besluit']['wettekst']['hoofdstuk']:
-        if 'artikel' in hoofdstuk.keys():
-            get_content_artikel(hoofdstuk['artikel'], wettexten, artikel_nummers, jcis, versiedata)
-        elif 'afdeling' in hoofdstuk.keys():
-            get_content_afdeling(hoofdstuk, wettexten, artikel_nummers, jcis, versiedata)
-        elif 'paragraaf' in hoofdstuk.keys():
-            get_content_paragraaf(hoofdstuk['paragraaf'], wettexten, artikel_nummers, jcis, versiedata)
+def process_regeling(regeling: dict) -> List[DataFrameRegel]:
+    regels: List[DataFrameRegel] = []
+    for artikel in regeling['regeling-tekst']['artikel']:
+        regels.extend(process_artikel(artikel))
+    return regels
 
 
-def get_content_paragraaf(paragraaf: Union[dict, list], wettexten: list, artikel_nummers: list, jcis: list, versiedata: list):
+def process_afdeling(afdeling: dict) -> List[DataFrameRegel]:
+    regels: List[DataFrameRegel] = []
+    if 'artikel' in afdeling.keys():
+        regels.extend(process_artikel(afdeling['artikel']))
+    elif 'paragraaf' in afdeling.keys():
+        regels.extend(process_paragraaf(afdeling['paragraaf']))
+    else:
+        raise ValueError('onbekende structuur in afdeling')
+    return regels
+
+
+def process_paragraaf(paragraaf: Union[dict, list]) -> List[DataFrameRegel]:
+    regels: List[DataFrameRegel] = []
     if isinstance(paragraaf, dict):
         if 'artikel' in paragraaf.keys():
-            get_content_artikel(paragraaf['artikel'], wettexten, artikel_nummers, jcis, versiedata)
+            regels.extend(process_artikel(paragraaf['artikel']))
     elif isinstance(paragraaf, list):
         for paragraaf_item in paragraaf:
-            get_content_paragraaf(paragraaf_item, wettexten, artikel_nummers, jcis, versiedata)
+            regels.extend(process_paragraaf(paragraaf_item))
     else:
-        print('This paragraph is neither a list nor a dictionary and cannot be parsed')
+        raise ValueError(
+            'This paragraph is neither a list nor a dictionary and cannot be parsed')
+    return regels
 
 
-def get_content_afdeling(hoofdstuk: dict, wettexten: list, artikel_nummers: list, jcis: list, versiedata: list):
-    for afdeling in hoofdstuk['afdeling']:
-        if 'artikel' in afdeling.keys():
-            get_content_artikel(afdeling['artikel'], wettexten, artikel_nummers, jcis, versiedata)
-        elif 'paragraaf' in afdeling.keys():
-            get_content_paragraaf(afdeling['paragraaf'], wettexten, artikel_nummers, jcis, versiedata)
-
-
-def get_content_artikel(artikel: Union[dict, list], wettexten: list, artikel_nummers: list, jcis: list, versiedata: list):
+def process_artikel(artikel: Union[dict, list]) -> List[DataFrameRegel]:
+    regels: List[DataFrameRegel] = []
     if isinstance(artikel, dict):
-        artikel_nummers.append(artikel['@bwb-ng-variabel-deel'])
-        unlayered_data = {}
-        texts_artikel = []
-        get_jci(artikel['meta-data'], jcis)
-        get_versie_datum(artikel['meta-data'], versiedata)
+        if artikel['@bwb-ng-variabel-deel'] == '/Hoofdstuk1/Afdeling1/Artikel1b':
+            print('break here')
+        meta_data = get_meta_data(artikel['meta-data'])
+        regels.extend(generic_process(artikel, meta_data))
 
-        for key_artikel, value_artikel in artikel.items():
-            if key_artikel == 'lijst':
-                get_content_lijst(value_artikel, texts_artikel)
-            elif key_artikel == 'al' and isinstance(value_artikel, dict):
-                if '#text' in value_artikel.keys():
-                    text_al = value_artikel['#text']
-                    if 'intref' in value_artikel.keys():
-                        intref_text = get_content_ref(value_artikel['intref'])
-                        if isinstance(intref_text, str):
-                            texts_artikel.append(text_al + intref_text)
-                    elif 'extref' in value_artikel.keys():
-                        extref_text = get_content_ref(value_artikel['extref'])
-                        if isinstance(extref_text, str):
-                            texts_artikel.append(text_al + extref_text)
-                    else:
-                        print('onbekende structuur in al artikel')
-            elif key_artikel == 'al' and isinstance(value_artikel, str):
-                texts_artikel.append(artikel['al'])
-            elif key_artikel == 'lid':
-                get_content_lid(value_artikel, texts_artikel)
-            else:
-                unlayered_data[key_artikel] = value_artikel
-
-        texts_artikel = [' '.join(texts_artikel)]
-        wettexten.append(texts_artikel)
-
-    if isinstance(artikel, list):
-        for artikel_item in artikel:
-            get_content_artikel(artikel_item, wettexten, artikel_nummers, jcis, versiedata)
+    elif isinstance(artikel, list):
+        for item in artikel:
+            regels.extend(process_artikel(item))
+    else:
+        raise ValueError('onbekende structuur in artikel')
+    return regels
 
 
-def get_content_lijst(lijst, text_list: list) -> list:
+def generic_process(container: dict, meta_data: MetaData) -> List[DataFrameRegel]:
+    regels: List[DataFrameRegel] = []
+    bwb_nummer = container['@bwb-ng-variabel-deel']
+    for key, value in container.items():
+        if key == 'lijst':
+            regels.extend(process_lijst(value, meta_data))
+        elif key == 'al':
+            regels.extend(unnest_and_process_al(bwb_nummer, value, meta_data))
+        elif key == 'lid':
+            for lid in value:
+                meta_data_lid = copy.copy(meta_data)
+                if 'meta-data' in lid.keys():
+                    meta_data_lid.jci = get_jci(lid['meta-data']['jcis']['jci'])
+                regels.extend(generic_process(lid, meta_data_lid))
+    return regels
+
+
+def process_lijst(lijst: dict, meta_data: MetaData) -> List[DataFrameRegel]:
+    regels: List[DataFrameRegel] = []
     if isinstance(lijst, dict):
         for onderdeel in lijst['li']:
-            bwb_nummer = onderdeel['@bwb-ng-variabel-deel']
-            text_list.append(' $ ' + get_onderdeel(bwb_nummer) + " : " + ' $ ')
             if isinstance(onderdeel, dict):
-                if 'al' in onderdeel.keys() and isinstance(onderdeel['al'], str):
-                    text_list.append(onderdeel['al'])
-                elif 'al' in onderdeel.keys() and isinstance(onderdeel['al'], dict):
-                    content_al = onderdeel['al']
-                    if 'nadruk' in content_al.keys():
-                        text_nadruk = content_al['nadruk']['#text']
-                        text_list.append(text_nadruk)
-                    if '#text' in content_al.keys():
-                        text_al = content_al['#text']
-                        if 'intref' in content_al.keys():
-                            intref_text = get_content_ref(content_al['intref'])
-                            if isinstance(intref_text, str):
-                                text_list.append(text_al + intref_text)
-                        if 'extref' in content_al.keys():
-                            extref_text = get_content_ref(content_al['extref'])
-                            if isinstance(extref_text, str):
-                                text_list.append(text_al + extref_text)
-                        else:
-                            text_list.append(text_al)
-
-                if 'lijst' in onderdeel.keys() and isinstance(onderdeel['lijst'], dict):
-                    get_content_lijst(onderdeel['lijst'], text_list)
+                meta_data_onderdeel = copy.copy(meta_data)
+                if 'meta-data' in onderdeel.keys():
+                    meta_data_onderdeel.jci = get_jci(onderdeel['meta-data']['jcis']['jci'])
+                regels.extend(generic_process(onderdeel, meta_data_onderdeel))
             else:
-                print('onbekende structuur in lijst')
+                raise ValueError('onbekende structuur in li')
     else:
-        for subonderdeel in lijst:
-            get_content_lijst(subonderdeel, text_list)
-    return text_list
+        raise ValueError('onbekende structuur in lijst')
+    return regels
 
 
-def get_content_lid(leden, text_list: list) -> list:
-    for lid in leden:
-        bwb_nummer = lid['@bwb-ng-variabel-deel']
-        text_list.append(' $ ' + get_onderdeel(bwb_nummer) + " : " + ' $ ')
+def unnest_and_process_al(bwb_nummer: str, al: Union[str, dict], meta_data: MetaData) -> List[DataFrameRegel]:
+    if isinstance(al, list):
+        return [process_al(bwb_nummer=bwb_nummer, al=nested_al, meta_data=meta_data) for nested_al in al]
+    else:
+        return [process_al(bwb_nummer=bwb_nummer, al=al, meta_data=meta_data)]
 
-        if 'al' in lid.keys() and isinstance(lid['al'], str):
-            text_list.append(lid['al'])
 
-        elif 'al' in lid.keys() and isinstance(lid['al'], dict):
-            content_al = lid['al']
-            if 'redactie' in content_al.keys():
-                return text_list
+def process_al(bwb_nummer: str, al: Union[str, dict], meta_data: MetaData) -> DataFrameRegel:
+    if isinstance(al, dict):
+        if '#text' in al.keys():
+            text_al = al['#text']
+            if 'intref' in al.keys() or 'extref' in al.keys() or 'nadruk' in al.keys():
+                intref_text = get_ref(al.get('intref', {'#text': ""}))
+                extref_text = get_ref(al.get('extref', {'#text': ""}))
+                nadruk = get_ref(al.get('nadruk', {'#text': ""}))
+                return DataFrameRegel(brontekst=text_al + str(intref_text) + str(extref_text) + str(nadruk),
+                                      aanduidingen=get_aanduidingen(bwb_nummer), meta_data=meta_data)
+
             else:
-                text_al = content_al['#text']
-                if 'intref' in content_al.keys():
-                    intref_text = get_content_ref(content_al['intref'])
-                    if isinstance(intref_text, str):
-                        text_list.append(text_al + intref_text)
-                if 'extref' in content_al.keys():
-                    extref_text = get_content_ref(content_al['extref'])
-                    if isinstance(extref_text, str):
-                        text_list.append(text_al + extref_text)
-                else:
-                    text_list.append(text_al)
-
-        if 'lijst' in lid.keys():
-            get_content_lijst(lid['lijst'], text_list)
-    return text_list
+                raise ValueError('onbekende structuur in al artikel')
+        if 'redactie' in al.keys():
+            return DataFrameRegel(brontekst=al['redactie']['#text'], aanduidingen=get_aanduidingen(bwb_nummer),
+                                  meta_data=meta_data)
+        else:
+            raise ValueError('onbekende structuur in al artikel')
+    elif isinstance(al, str):
+        return DataFrameRegel(brontekst=al, aanduidingen=get_aanduidingen(bwb_nummer), meta_data=meta_data)
+    else:
+        raise ValueError('onbekende structuur in al')
 
 
-def get_content_ref(ref):
+def get_ref(ref: Union[list, dict]) -> str:
     if isinstance(ref, dict):
         ref_text = ref['#text']
         return ref_text
     else:
         for ref_item in ref:
-            return get_content_ref(ref_item)
+            return get_ref(ref_item)
 
 
-def get_jci(metadata, jcis: list):
-    jci_list = []
-    for jci in metadata['jcis']['jci']:
-        jci_list.append(jci['@verwijzing'])
-    jcis.append(jci_list)
+def get_aanduidingen(bwb_nummer: str) -> List[str]:
+    split = bwb_nummer.split("/")
+    split.remove("")
+    return split
 
 
-def get_versie_datum(metadata, versiedata):
-    versiedatums_list = []
-    if isinstance(metadata['brondata'], dict):
-        if 'inwerkingtreding' in metadata['brondata'].keys():
-            versiedata.append(metadata['brondata']['inwerkingtreding']['inwerkingtreding.datum']['#text'])
+def get_meta_data(meta_data: dict) -> MetaData:
+    versie = ""
+    jci = ""
+    if "brondata" in meta_data.keys():
+        versie = get_versie(meta_data["brondata"])
+    if "jcis" in meta_data.keys():
+        jci = get_jci(meta_data["jcis"]['jci'])
+    return MetaData(versie=versie, jci=jci)
+
+
+def get_versie(brondata: Union[dict, list]) -> str:
+    if isinstance(brondata, list):
+        return get_versie(brondata[-1])
+    elif isinstance(brondata, dict):
+        if 'inwerkingtreding' in brondata.keys():
+            versie = brondata['inwerkingtreding']['inwerkingtreding.datum']['#text']
+            return versie
         else:
-            versiedata.append(metadata['brondata']['oorspronkelijk']['publicatie']['uitgiftedatum']['#text'])
-    elif isinstance(metadata['brondata'], list):
-        for data in metadata['brondata']:
-            if 'inwerkingtreding' in data.keys():
-                versiedatums_list.append(data['inwerkingtreding']['inwerkingtreding.datum']['#text'])
-            else:
-                versiedatums_list.append(data['oorspronkelijk']['publicatie']['uitgiftedatum']['#text'])
-        if versiedatums_list[0] == versiedatums_list[1]:
-            del versiedatums_list[0]
-        versiedata.append(versiedatums_list)
+            return 'versie missing'
 
 
-def get_onderdeel(bwb_deel):
-    return bwb_deel.rsplit('/', 1)[-1]
+def get_jci(jci: Union[list, dict]) -> str:
+    if isinstance(jci, list):
+        return get_jci(jci[-1])
+    elif isinstance(jci, dict):
+        return jci['@verwijzing']

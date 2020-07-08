@@ -1,2 +1,6 @@
-/venv/
+/.venv/
 .idea
+**/.pytest_cache
+/calculemus.egg-info
+/flintfiller.egg-info
+

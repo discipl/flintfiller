@@ -20,12 +20,12 @@
     @contact: maaike.deboer@tno.nl, roos.bakker@tno.nl
 """
 
+import ast
 # This script transforms POStagged text to a FLINT frame.
 import json
 from typing import Tuple
 
 import pandas as pd
-import ast
 
 action_verbs = ['aanbrengen', 'aanwijzen', 'achterwege blijven', 'afnemen', 'afwijken', 'afwijzen',
                 'ambtshalve verlenen', 'ambtshalve verlengen', 'annuleren', 'behandelen', 'beheren', 'bepalen',
@@ -45,6 +45,9 @@ action_verbs = ['aanbrengen', 'aanwijzen', 'achterwege blijven', 'afnemen', 'afw
                 'verkorten', 'verkrijgen', 'verlaten', 'verlenen', 'verlengen', 'verplichten', 'verschaffen',
                 'verstrekken', 'verzoeken', 'voegen', 'vorderen', 'vragen', 'willigen', 'weigeren', 'wijzigen']
 set_propernouns = ["PRP", "PRP$", "NNP", "NNPS"]
+
+list_act = []
+list_fact = []
 
 global facts_list
 
@@ -99,15 +102,15 @@ def get_empty_fact_frame() -> dict:
 
 
 def get_source_dict(row, text, name_law) -> dict:
-    source_dict = {"validFrom": row["versie:"]}
+    source_dict = {"validFrom": row["Versie"]}
     try:
-        source_dict["citation"] = "art. " + row['jci1.3:'].split("artikel=")[1].split('&')[0] + "lid " + \
-                                  row['jci1.3:'].split("lid=")[1].split('&')[0] + ", " + name_law
+        source_dict["citation"] = "art. " + row['jci 1.3'].split("artikel=")[1].split('&')[0] + "lid " + \
+                                  row['jci 1.3'].split("lid=")[1].split('&')[0] + ", " + name_law
     except:
         # if split("lid=")[1] is not filled in, do not add this part
-        source_dict["citation"] = "art. " + row['jci1.3:'].split("artikel=")[1].split('&')[0] + ", " + name_law
+        source_dict["citation"] = "art. " + row['jci 1.3'].split("artikel=")[1].split('&')[0] + ", " + name_law
     source_dict['text'] = text.replace('\n', '').replace('\r', '').replace("\t", " ")
-    source_dict['juriconnect'] = row['jci1.3:']
+    source_dict['juriconnect'] = row['jci 1.3']
     return source_dict
 
 
@@ -118,7 +121,7 @@ def create_fact_or_act_function(list_text: list) -> dict:
         try:
             if 'Onderdeel' not in fct and 'Lid' not in fct and len(fct) > 3:
                 fact_function_operands.append(
-                "[" + fct.replace('\n', '').replace('\r', '').split(";")[0].replace("\t", "")[1:] + "]")  # .
+                    "[" + fct.replace('\n', '').replace('\r', '').split(";")[0].replace("\t", "")[1:] + "]")  # .
         except:
             # if the fact is empty or has length of 0, [1:] does not work
             'do nothing'
@@ -163,8 +166,8 @@ def get_object_and_actor(orig, tags) -> Tuple[str, str]:
                 if tags[i][num][1] in set_propernouns and list(tags[i][num][0])[0].isupper() and actor_num < 0:
                     list_non_actors = ['Onderdeel', 'Lid', 'Indien', 'Tenzij', 'Onverminderd', 'Nadat']
 
-                    if not(any(non_actor in tags[i][num][0] for non_actor in list_non_actors)):
-                        #print(tags[i][num])
+                    if not (any(non_actor in tags[i][num][0] for non_actor in list_non_actors)):
+                        # print(tags[i][num])
                         actor_num = i
         except:
             # if tags[i][len(tags[i][0])][0] or tags[i][0] does not exist, we have an error
@@ -189,9 +192,9 @@ def get_object_and_actor(orig, tags) -> Tuple[str, str]:
 
 def check_infinitive(inf, row) -> bool:
     return inf in action_verbs and not \
-        ("het " + inf) in row['text:'] or \
-           ("de " + inf) in row['text:'] or \
-           ("een " + inf) in row['text:']
+        ("het " + inf) in row['Brontekst'] or \
+        ("de " + inf) in row['Brontekst'] or \
+        ("een " + inf) in row['Brontekst']
 
 
 # This is a first version!
@@ -199,21 +202,25 @@ def get_acts(row, verbs, tags, flint_frames, name_law) -> dict:
     # for each verb (if one verb this also works)
     for infinitive, original in verbs.items():
         # if the verb is in the first part (before the :) (could be more verbs)
-        parts = row['text:'].split(":")
+        parts = row['Brontekst'].split(":")
+        # print("verbs found " + infinitive + " " + original)
         # addition to wrong parsing:
         # acts are not those that have a determiner before it; Dutch determiners are 'de',
         # 'het' and 'een'
         # acts are not those that have 'indien' as a form of 'indienen'
         if check_infinitive(infinitive, row) and not original == 'indien':
             act_frame = get_empty_act_frame()
+            # print("act found: " + original)
+            list_act.append([original, row['Brontekst']])
+            # print(original + "\t" + row['text:'])
             act_frame['action'] = "[" + infinitive + "]"
 
             # if we know that there should be preconditions, add them
-            if ":" in row['text:'] and original in parts[0]:
+            if ":" in row['Brontekst'] and original in parts[0]:
                 act_function = create_fact_or_act_function(''.join(parts[1:]).split("$"))
                 act_frame['preconditions'] = act_function
-                #print(''.join(parts[1:]).split("$$"))
-                #print(act_function)
+                # print(''.join(parts[1:]).split("$$"))
+                # print(act_function)
                 # TODO in version 2: make a fact of the pre-condition
                 # get_empty_fact_frame()
 
@@ -225,10 +232,10 @@ def get_acts(row, verbs, tags, flint_frames, name_law) -> dict:
             act_frame['object'] = "[" + obj[1:].lower() + "]"
 
             # TODO in version 2: make code better; now only vreemdeling as recipient
-            if "vreemdeling" in row['text:']:
+            if "vreemdeling" in row['Brontekst']:
                 act_frame['recipient'] = "[vreemdeling]"
 
-            source_dict_act = get_source_dict(row, row['text:'], name_law)
+            source_dict_act = get_source_dict(row, row['Brontekst'], name_law)
             act_frame['sources'].append(source_dict_act)
 
             flint_frames['acts'].append(act_frame)
@@ -250,6 +257,7 @@ def get_facts(row, part, name_law) -> dict:
     fact_frame['function'] = fact_function
     return fact_frame
 
+
 def create_flint_frames(df, name_law) -> dict:
     flint_frames = get_empty_flint_frame_format()
     global facts_list
@@ -258,11 +266,15 @@ def create_flint_frames(df, name_law) -> dict:
     for index, row in df.iterrows():
         # we start with Facts that are present in the First Article
         # try:
-        if str(row['artikelnr:']) == '/Hoofdstuk1/Afdeling1/Artikel1' and type(row['text:']) != float:
-            for part in row['text:'].split("$"):
+        # Bug Fix: able to handle all prefixes before Artikel1
+        if str(row['Nummer'].split("/")[len(row['Nummer'].split("/")) - 1]) == 'Artikel1' and type(
+                row['Brontekst']) != float:
+            for part in row['Brontekst'].split("$"):
                 if ":" in part and not "Onderdeel" in part:
                     if part.split(":")[0][1:] not in facts_list and len(part.split(":")[1]) > 2:
                         # Facts
+                        list_fact.append([part.split(":")[0][1:], part.split(":")[1].split(";")[0]])
+                        # print(part.split(":")[0][1:] + "\t" + part.split(":")[1].split(";")[0])
                         fact_frame = get_facts(row, part, name_law)
                         flint_frames['facts'].append(fact_frame)
 
@@ -289,15 +301,33 @@ def dataframe_to_frame_parser(csv_file, output_file):
     if name_law == 'postagged':
         name_law = csv_file.split("_")[len(csv_file.split("_")) - 2].split(".")[0]
     pos_tagged_df = read_csv_to_df(str(csv_file))
-    print(name_law)
+    # print(name_law)
     flint_frames = create_flint_frames(pos_tagged_df, name_law)
     write_flint_frames_to_json(flint_frames, output_file)
 
-#if __name__ == '__main__':
-#    csv_file = 'C:\\Users\\boermhtd\\PycharmProjects\\calculemus\\nlp\\data\\csv_files\\postagged\\BWBR0011823_2019-02-27_Vreemdelingenwet_postagged.csv'
-#               #BWBR0043324_2020-03-31_0_TOGS_postagged.csv'
-#    output_file = 'TOGS_new.json'
-#    dataframe_to_frame_parser(csv_file, output_file)
+# if __name__ == '__main__':
+#     method = "TOGS"
+#     base = 'C:\\Users\\boermhtd\\PycharmProjects\\calculemus\\nlp\\data\\csv_files\\postagged\\'
+#     if method == "TOGS":
+#         csv_file = base + 'BWBR0043324_2020-03-31_0_TOGS_postagged.csv'
+#     elif method == "TOZO":
+#         csv_file = base + 'BWBR0043402_2020-04-22_0_TOZO_postagged.csv'
+#     elif method == "AWB":
+#         csv_file = base + 'BWBR0005537_2020-04-15_0_AWB_postagged.csv'
+#
+#                #'BWBR0011823_2019-02-27_Vreemdelingenwet_postagged.csv'
+#
+#     output_file = method + '_new.json'
+#     dataframe_to_frame_parser(csv_file, output_file)
+#
+#     act_file = "acts_" + method + ".csv"
+#     df_act = pd.DataFrame(list_act, columns = ['action', 'sentence'])
+#     df_act.to_csv(act_file, index=False)
+#
+#     fact_file = "facts_" + method + ".csv"
+#     df_fact = pd.DataFrame(list_fact, columns = ['fact', 'definition'])
+#     df_fact.to_csv(fact_file, index=False)
+
 #     # df = read_csv_to_df(str(csv_file))
 #     flint_frames = create_flint_frames(df)
 #     write_flint_frames_to_json(flint_frames)

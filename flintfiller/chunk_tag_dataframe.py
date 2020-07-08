@@ -102,10 +102,10 @@ def parser(tagger_name, dataframe, output_file):
 
     if tagger_name == "alpino":
         pos_tag = train_dutch_tagger()
-        parsed_text = parse_text_alpino(dataframe['text:'], pos_tag)
+        parsed_text = parse_text_alpino(dataframe['Brontekst'], pos_tag)
         fle = "postags_alpino.txt"
     elif tagger_name == "pattern":
-        parsed_text, parsed_verbs = parse_text_pattern(dataframe['text:'])
+        parsed_text, parsed_verbs = parse_text_pattern(dataframe['Brontekst'])
         fle = "postags_pattern-nl.txt"
     else:
         print("parser not recognized")

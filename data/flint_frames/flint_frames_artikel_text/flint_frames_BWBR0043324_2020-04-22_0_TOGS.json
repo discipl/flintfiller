@@ -1,0 +1,207 @@
+{
+  "acts": [
+    {
+      "act": "<<afwijzen de tegemoetkoming niet verstrekt op grond van de algemene de-minimisverordening>>",
+      "actor": "[]",
+      "action": "[afwijzen]",
+      "object": "[de tegemoetkoming niet verstrekt op grond van de algemene de-minimisverordening]",
+      "recipient": "",
+      "preconditions": {
+        "expression": "AND",
+        "operands": [
+          "[ de gedupeerde onderneming in staat van faillissement verkeert dan wel bij de rechtbank een verzoek tot verlening van surseance van betaling aan de onderneming is ingediend]",
+          "[ de tegemoetkoming niet verstrekt kan worden op grond van de algemene de-minimisverordening.]"
+        ]
+      },
+      "create": [],
+      "terminate": [],
+      "sources": [
+        {
+          "validFrom": "31-03-2020",
+          "citation": "art. 3, TOGS",
+          "text": "De minister beslist afwijzend op een aanvraag indien:  $ Onderdeela :  $  de aanvraag niet voldoet aan de bij deze beleidsregel gestelde eisen;  $ Onderdeelb :  $  de gedupeerde onderneming in staat van faillissement verkeert dan wel bij de rechtbank een verzoek tot verlening van surseance van betaling aan de onderneming is ingediend;  $ Onderdeelc :  $  de tegemoetkoming niet verstrekt kan worden op grond van de algemene de-minimisverordening.",
+          "juriconnect": "jci1.3:c:BWBR0043324&artikel=3&z=2020-04-22&g=2020-04-22"
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "act": "<<indienen onderdeelb onderneming in van faillissement dan wel bij de rechtbank een verzoek tot verlening van surseance van betaling aan de onderneming>>",
+      "actor": "[]",
+      "action": "[indienen]",
+      "object": "[onderdeelb onderneming in van faillissement dan wel bij de rechtbank een verzoek tot verlening van surseance van betaling aan de onderneming]",
+      "recipient": "",
+      "preconditions": {
+        "expression": "LITERAL",
+        "operands": true
+      },
+      "create": [],
+      "terminate": [],
+      "sources": [
+        {
+          "validFrom": "31-03-2020",
+          "citation": "art. 3, TOGS",
+          "text": "De minister beslist afwijzend op een aanvraag indien:  $ Onderdeela :  $  de aanvraag niet voldoet aan de bij deze beleidsregel gestelde eisen;  $ Onderdeelb :  $  de gedupeerde onderneming in staat van faillissement verkeert dan wel bij de rechtbank een verzoek tot verlening van surseance van betaling aan de onderneming is ingediend;  $ Onderdeelc :  $  de tegemoetkoming niet verstrekt kan worden op grond van de algemene de-minimisverordening.",
+          "juriconnect": "jci1.3:c:BWBR0043324&artikel=3&z=2020-04-22&g=2020-04-22"
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "act": "<<indienen een aanvraag>>",
+      "actor": "[de Kamer]",
+      "action": "[indienen]",
+      "object": "[een aanvraag]",
+      "recipient": "",
+      "preconditions": {
+        "expression": "LITERAL",
+        "operands": true
+      },
+      "create": [],
+      "terminate": [],
+      "sources": [
+        {
+          "validFrom": "22-04-2020",
+          "citation": "art. 4, TOGS",
+          "text": " $ Lid1 :  $  Een aanvraag wordt ingediend met gebruikmaking van een door de minister beschikbaar gesteld middel.  $ Lid2 :  $  Een aanvraag omvat in ieder geval:  $ Onderdeela :  $  gegevens over de gedupeerde onderneming, waaronder het nummer waarmee de gedupeerde onderneming geregistreerd is bij de Kamer van Koophandel, het post- en bezoekadres en het rekeningnummer dat op naam van de gedupeerde onderneming staat of, in geval de gedupeerde onderneming een eenmanszaak betreft en deze geen zakelijke rekening heeft, het rekeningnummer van de eigenaar van de eenmanszaak;  $ Onderdeelb :  $  gegevens over de contactpersoon bij de gedupeerde onderneming, waaronder de naam, het telefoonnummer en het e-mailadres;  $ Onderdeelc :  $  een verklaring dat de gedupeerde onderneming geen overheidsbedrijf is;  $ Onderdeeld :  $  een verklaring de-minimissteun;  $ Onderdeele :  $  een verklaring dat de gedupeerde onderneming op het moment van aanvraag voldoet aan de bij deze beleidsregel gestelde eisen;  $ Onderdeelf :  $  een verklaring waarin de gedupeerde onderneming aangeeft dat de onderneming in de periode van 16maart 2020 tot en met 15juni 2020 een omzetverlies verwacht te lijden van ten minste 4000,;  $ Onderdeelg :  $  een verklaring waarin de gedupeerde onderneming aangeeft dat de onderneming in de periode van 16maart 2020 tot en met 15juni 2020 verwacht ten minste 4000, aan vaste lasten te hebben, ook na gebruik van andere door de overheid beschikbaar gestelde steunmaatregelen in het kader van de bestrijding van de verdere verspreiding van COVID-19;  $ Onderdeelh :  $  indien van toepassing: een verklaring dat de gedupeerde onderneming een vestiging heeft die fysiek afgescheiden is van de privwoning van de eigenaar of eigenaren van de onderneming en voorzien is van een eigen opgang of toegang, en een bewijsstuk ter onderbouwing van deze verklaring zoals:  $ Onderdeel1 :  $  een kopie van een zakelijke huur- of koopovereenkomst van de vestiging; of  $ Onderdeel2 :  $  een kopie van de belastingaangifte van het jaar 2019 of 2020 waaruit blijkt dat er sprake is van een werkruimte waarvan de vaste lasten en kosten fiscaal aftrekbaar zijn als bedoeld in ;artikel 3.16, eerste lid, van de Wet inkomstenbelasting 2001  $ Onderdeeli :  $  voor zover het een gedupeerde agrarische recreatieonderneming betreft: een verklaring dat het te verwachten omzetverlies, bedoeld in , en de te verwachten vaste lasten, bedoeld in artikel 2, eerste lid, onderdeel b, betrekking hebben op zijn nevenactiviteit met de code 55.20.1, 55.20.2, 55.30 of 93.29.9 van de Standaard Bedrijfsindeling;artikel 2, eerste lid, onderdeel a voor zover het een gedupeerde agrarische recreatieonderneming betreft: een verklaring dat het te verwachten omzetverlies, bedoeld in , en de te verwachten vaste lasten, bedoeld in artikel 2, eerste lid, onderdeel b, betrekking hebben op zijn nevenactiviteit met de code 55.20.1, 55.20.2, 55.30 of 93.29.9 van de Standaard Bedrijfsindeling;  $ Onderdeelj :  $  voor zover het een gedupeerde onderneming in de toeleveringsketen betreft: een verklaring dat de onderneming het omzetverlies, bedoeld in , verwacht te lijden doordat de onderneming voor minimaal zeventig procent van zijn omzet afhankelijk is van:artikel 2, eerste lid, onderdeel a voor zover het een gedupeerde onderneming in de toeleveringsketen betreft: een verklaring dat de onderneming het omzetverlies, bedoeld in , verwacht te lijden doordat de onderneming voor minimaal zeventig procent van zijn omzet afhankelijk is van:  $ Onderdeel1 :  $  direct gedupeerde ondernemingen; of  $ Onderdeel2 :  $  activiteiten die als gevolg van de overheidsmaatregelen ter bestrijding van de verdere verspreiding van COVID-19 verboden zijn of ontraden worden; en  $ Onderdeelk :  $  voor zover het een gedupeerde zorgonderneming betreft: een verklaring dat de onderneming verwacht, ook na aftrek van de tegemoetkoming van zorginkopers ter compensatie van het omzetverlies als gevolg van de maatregelen ter bestrijding van COVID-19, het omzetverlies, bedoeld in , te lijden en de vaste lasten, bedoeld in artikel 2, eerste lid, onderdeel b, te hebben.artikel 2, eerste lid, onderdeel a voor zover het een gedupeerde zorgonderneming betreft: een verklaring dat de onderneming verwacht, ook na aftrek van de tegemoetkoming van zorginkopers ter compensatie van het omzetverlies als gevolg van de maatregelen ter bestrijding van COVID-19, het omzetverlies, bedoeld in , te lijden en de vaste lasten, bedoeld in artikel 2, eerste lid, onderdeel b, te hebben.  $ Lid3 :  $  Een aanvraag kan worden ingediend in de periode van 27maart 2020 tot en met 26juni 2020.",
+          "juriconnect": "jci1.3:c:BWBR0043324&artikel=4&z=2020-04-22&g=2020-04-22"
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "act": "<<stellen een aanvraag  worden ingediend in de periode van tot met>>",
+      "actor": "[de Kamer]",
+      "action": "[stellen]",
+      "object": "[een aanvraag  worden ingediend in de periode van tot met]",
+      "recipient": "",
+      "preconditions": {
+        "expression": "LITERAL",
+        "operands": true
+      },
+      "create": [],
+      "terminate": [],
+      "sources": [
+        {
+          "validFrom": "22-04-2020",
+          "citation": "art. 4, TOGS",
+          "text": " $ Lid1 :  $  Een aanvraag wordt ingediend met gebruikmaking van een door de minister beschikbaar gesteld middel.  $ Lid2 :  $  Een aanvraag omvat in ieder geval:  $ Onderdeela :  $  gegevens over de gedupeerde onderneming, waaronder het nummer waarmee de gedupeerde onderneming geregistreerd is bij de Kamer van Koophandel, het post- en bezoekadres en het rekeningnummer dat op naam van de gedupeerde onderneming staat of, in geval de gedupeerde onderneming een eenmanszaak betreft en deze geen zakelijke rekening heeft, het rekeningnummer van de eigenaar van de eenmanszaak;  $ Onderdeelb :  $  gegevens over de contactpersoon bij de gedupeerde onderneming, waaronder de naam, het telefoonnummer en het e-mailadres;  $ Onderdeelc :  $  een verklaring dat de gedupeerde onderneming geen overheidsbedrijf is;  $ Onderdeeld :  $  een verklaring de-minimissteun;  $ Onderdeele :  $  een verklaring dat de gedupeerde onderneming op het moment van aanvraag voldoet aan de bij deze beleidsregel gestelde eisen;  $ Onderdeelf :  $  een verklaring waarin de gedupeerde onderneming aangeeft dat de onderneming in de periode van 16maart 2020 tot en met 15juni 2020 een omzetverlies verwacht te lijden van ten minste 4000,;  $ Onderdeelg :  $  een verklaring waarin de gedupeerde onderneming aangeeft dat de onderneming in de periode van 16maart 2020 tot en met 15juni 2020 verwacht ten minste 4000, aan vaste lasten te hebben, ook na gebruik van andere door de overheid beschikbaar gestelde steunmaatregelen in het kader van de bestrijding van de verdere verspreiding van COVID-19;  $ Onderdeelh :  $  indien van toepassing: een verklaring dat de gedupeerde onderneming een vestiging heeft die fysiek afgescheiden is van de privwoning van de eigenaar of eigenaren van de onderneming en voorzien is van een eigen opgang of toegang, en een bewijsstuk ter onderbouwing van deze verklaring zoals:  $ Onderdeel1 :  $  een kopie van een zakelijke huur- of koopovereenkomst van de vestiging; of  $ Onderdeel2 :  $  een kopie van de belastingaangifte van het jaar 2019 of 2020 waaruit blijkt dat er sprake is van een werkruimte waarvan de vaste lasten en kosten fiscaal aftrekbaar zijn als bedoeld in ;artikel 3.16, eerste lid, van de Wet inkomstenbelasting 2001  $ Onderdeeli :  $  voor zover het een gedupeerde agrarische recreatieonderneming betreft: een verklaring dat het te verwachten omzetverlies, bedoeld in , en de te verwachten vaste lasten, bedoeld in artikel 2, eerste lid, onderdeel b, betrekking hebben op zijn nevenactiviteit met de code 55.20.1, 55.20.2, 55.30 of 93.29.9 van de Standaard Bedrijfsindeling;artikel 2, eerste lid, onderdeel a voor zover het een gedupeerde agrarische recreatieonderneming betreft: een verklaring dat het te verwachten omzetverlies, bedoeld in , en de te verwachten vaste lasten, bedoeld in artikel 2, eerste lid, onderdeel b, betrekking hebben op zijn nevenactiviteit met de code 55.20.1, 55.20.2, 55.30 of 93.29.9 van de Standaard Bedrijfsindeling;  $ Onderdeelj :  $  voor zover het een gedupeerde onderneming in de toeleveringsketen betreft: een verklaring dat de onderneming het omzetverlies, bedoeld in , verwacht te lijden doordat de onderneming voor minimaal zeventig procent van zijn omzet afhankelijk is van:artikel 2, eerste lid, onderdeel a voor zover het een gedupeerde onderneming in de toeleveringsketen betreft: een verklaring dat de onderneming het omzetverlies, bedoeld in , verwacht te lijden doordat de onderneming voor minimaal zeventig procent van zijn omzet afhankelijk is van:  $ Onderdeel1 :  $  direct gedupeerde ondernemingen; of  $ Onderdeel2 :  $  activiteiten die als gevolg van de overheidsmaatregelen ter bestrijding van de verdere verspreiding van COVID-19 verboden zijn of ontraden worden; en  $ Onderdeelk :  $  voor zover het een gedupeerde zorgonderneming betreft: een verklaring dat de onderneming verwacht, ook na aftrek van de tegemoetkoming van zorginkopers ter compensatie van het omzetverlies als gevolg van de maatregelen ter bestrijding van COVID-19, het omzetverlies, bedoeld in , te lijden en de vaste lasten, bedoeld in artikel 2, eerste lid, onderdeel b, te hebben.artikel 2, eerste lid, onderdeel a voor zover het een gedupeerde zorgonderneming betreft: een verklaring dat de onderneming verwacht, ook na aftrek van de tegemoetkoming van zorginkopers ter compensatie van het omzetverlies als gevolg van de maatregelen ter bestrijding van COVID-19, het omzetverlies, bedoeld in , te lijden en de vaste lasten, bedoeld in artikel 2, eerste lid, onderdeel b, te hebben.  $ Lid3 :  $  Een aanvraag kan worden ingediend in de periode van 27maart 2020 tot en met 26juni 2020.",
+          "juriconnect": "jci1.3:c:BWBR0043324&artikel=4&z=2020-04-22&g=2020-04-22"
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "act": "<<stellen de minister beslist binnen drie weken na ontvangst van een aanvraag indien niet binnen deze termijn beslist de minister de aanvrager daarvan in kennis daarbij een redelijke termijn waarbinnen de beslissing wel  worden genomen>>",
+      "actor": "[]",
+      "action": "[stellen]",
+      "object": "[de minister beslist binnen drie weken na ontvangst van een aanvraag indien niet binnen deze termijn beslist de minister de aanvrager daarvan in kennis daarbij een redelijke termijn waarbinnen de beslissing wel  worden genomen]",
+      "recipient": "",
+      "preconditions": {
+        "expression": "LITERAL",
+        "operands": true
+      },
+      "create": [],
+      "terminate": [],
+      "sources": [
+        {
+          "validFrom": "31-03-2020",
+          "citation": "art. 5, TOGS",
+          "text": "De minister beslist binnen drie weken na ontvangst van een aanvraag. Indien niet binnen deze termijn kan worden beslist, stelt de minister de aanvrager daarvan in kennis en noemt daarbij een redelijke termijn waarbinnen de beslissing wel kan worden genomen.",
+          "juriconnect": "jci1.3:c:BWBR0043324&artikel=5&z=2020-04-22&g=2020-04-22"
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "act": "<<nemen de minister beslist binnen drie weken na ontvangst van een aanvraag indien niet binnen deze termijn beslist de minister de aanvrager daarvan in kennis daarbij een redelijke termijn waarbinnen de beslissing wel  worden genomen>>",
+      "actor": "[]",
+      "action": "[nemen]",
+      "object": "[de minister beslist binnen drie weken na ontvangst van een aanvraag indien niet binnen deze termijn beslist de minister de aanvrager daarvan in kennis daarbij een redelijke termijn waarbinnen de beslissing wel  worden genomen]",
+      "recipient": "",
+      "preconditions": {
+        "expression": "LITERAL",
+        "operands": true
+      },
+      "create": [],
+      "terminate": [],
+      "sources": [
+        {
+          "validFrom": "31-03-2020",
+          "citation": "art. 5, TOGS",
+          "text": "De minister beslist binnen drie weken na ontvangst van een aanvraag. Indien niet binnen deze termijn kan worden beslist, stelt de minister de aanvrager daarvan in kennis en noemt daarbij een redelijke termijn waarbinnen de beslissing wel kan worden genomen.",
+          "juriconnect": "jci1.3:c:BWBR0043324&artikel=5&z=2020-04-22&g=2020-04-22"
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "act": "<<ontvangen onderdeeld voor zover het zorgonderneming bewijsstukken waaruit blijkt waar de verklaring bedoeld in op een kopie van de omzetgegevens uit de boekhouding van de aangifte van de omzetbelasting over 2019 of 2020 en een kopie van de stukken uit de boekhouding van waaruit blijkt wat de hoogte van de tegemoetkomingen die zorgonderneming>>",
+      "actor": "[]",
+      "action": "[ontvangen]",
+      "object": "[onderdeeld voor zover het zorgonderneming bewijsstukken waaruit blijkt waar de verklaring bedoeld in op een kopie van de omzetgegevens uit de boekhouding van de aangifte van de omzetbelasting over 2019 of 2020 en een kopie van de stukken uit de boekhouding van waaruit blijkt wat de hoogte van de tegemoetkomingen die zorgonderneming]",
+      "recipient": "",
+      "preconditions": {
+        "expression": "LITERAL",
+        "operands": true
+      },
+      "create": [],
+      "terminate": [],
+      "sources": [
+        {
+          "validFrom": "22-04-2020",
+          "citation": "art. 6, TOGS",
+          "text": " $ Lid1 :  $  De minister kan de hoogte van de tegemoetkoming binnen vijf jaar na de verstrekking herzien dan wel de beschikking tot de tegemoetkoming intrekken, indien blijkt dat de tegemoetkoming, door onjuiste gegevensverstrekking door de gedupeerde onderneming, niet in overeenstemming met deze beleidsregel is verstrekt, of indien de gedupeerde onderneming de bewijsstukken, bedoeld in het tweede lid, niet overlegt.  $ Lid2 :  $  Indien van toepassing, overlegt de gedupeerde onderneming desgevraagd gedurende vijf jaar na de verstrekking van de tegemoetkoming de volgende bewijsstukken aan de minister:  $ Onderdeela :  $  aanvullende bewijsstukken waaruit blijkt dat de gedupeerde onderneming op het moment van de aanvraag van de tegemoetkoming een vestiging had die fysiek afgescheiden was van de privwoning van de eigenaar of eigenaren van de onderneming en voorzien was van een eigen opgang of toegang;  $ Onderdeelb :  $  voor zover het een gedupeerde agrarische recreatieonderneming betreft: bewijsstukken waaruit blijkt waar de verklaring, bedoeld in , op gebaseerd is, zoals een kopie van de omzetgegevens uit de boekhouding of van de aangifte van de omzetbelasting over 2019 of 2020;artikel 4, tweede lid, onderdeel i voor zover het een gedupeerde agrarische recreatieonderneming betreft: bewijsstukken waaruit blijkt waar de verklaring, bedoeld in , op gebaseerd is, zoals een kopie van de omzetgegevens uit de boekhouding of van de aangifte van de omzetbelasting over 2019 of 2020;  $ Onderdeelc :  $  voor zover het een gedupeerde onderneming in de toeleveringsketen betreft: bewijsstukken waaruit blijkt waar de verklaring, bedoeld in , op gebaseerd is, zoals een kopie van de omzetgegevens uit de boekhouding of van de aangifte van de omzetbelasting over 2019 of 2020;artikel 4, tweede lid, onderdeel j voor zover het een gedupeerde onderneming in de toeleveringsketen betreft: bewijsstukken waaruit blijkt waar de verklaring, bedoeld in , op gebaseerd is, zoals een kopie van de omzetgegevens uit de boekhouding of van de aangifte van de omzetbelasting over 2019 of 2020;  $ Onderdeeld :  $  voor zover het een gedupeerde zorgonderneming betreft: bewijsstukken waaruit blijkt waar de verklaring, bedoeld in , op gebaseerd is, zoals een kopie van de omzetgegevens uit de boekhouding of van de aangifte van de omzetbelasting over 2019 of 2020 en een kopie van de stukken uit de boekhouding van 2020 waaruit blijkt wat de hoogte is van de tegemoetkomingen die de gedupeerde zorgonderneming heeft ontvangen van de zorginkopers ter compensatie van het omzetverlies als gevolg van de maatregelen ter bestrijding van COVID-19.artikel 4, tweede lid, onderdeel k voor zover het een gedupeerde zorgonderneming betreft: bewijsstukken waaruit blijkt waar de verklaring, bedoeld in , op gebaseerd is, zoals een kopie van de omzetgegevens uit de boekhouding of van de aangifte van de omzetbelasting over 2019 of 2020 en een kopie van de stukken uit de boekhouding van 2020 waaruit blijkt wat de hoogte is van de tegemoetkomingen die de gedupeerde zorgonderneming heeft ontvangen van de zorginkopers ter compensatie van het omzetverlies als gevolg van de maatregelen ter bestrijding van COVID-19.",
+          "juriconnect": "jci1.3:c:BWBR0043324&artikel=6&z=2020-04-22&g=2020-04-22"
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "act": "<<plaatsen deze beleidsregel in werking met ingang van de dag na de datum van van de staatscourant waarin zij>>",
+      "actor": "[$ Deze beleidsregel]",
+      "action": "[plaatsen]",
+      "object": "[deze beleidsregel in werking met ingang van de dag na de datum van van de staatscourant waarin zij]",
+      "recipient": "",
+      "preconditions": {
+        "expression": "LITERAL",
+        "operands": true
+      },
+      "create": [],
+      "terminate": [],
+      "sources": [
+        {
+          "validFrom": "31-03-2020",
+          "citation": "art. 8, TOGS",
+          "text": " $ Lid1 :  $  Deze beleidsregel treedt in werking met ingang van de dag na de datum van uitgifte van de Staatscourant waarin zij wordt geplaatst, en werkt terug tot en met 27maart 2020.  $ Lid2 :  $  Deze beleidsregel vervalt met ingang van 1januari 2021, met dien verstande dat de beleidsregel van toepassing blijft op aanvragen om tegemoetkoming die uiterlijk 26juni 2020 zijn ingediend, dan wel op tegemoetkomingen die voor 1januari 2021 zijn verstrekt.",
+          "juriconnect": "jci1.3:c:BWBR0043324&artikel=8&z=2020-04-22&g=2020-04-22"
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "act": "<<indienen deze beleidsregel met ingang van met dien de beleidsregel van toepassing op aanvragen om tegemoetkoming die uiterlijk 26juni 2020 zijn dan wel op tegemoetkomingen die voor 1januari 2021 zijn verstrekt>>",
+      "actor": "[$ Deze beleidsregel]",
+      "action": "[indienen]",
+      "object": "[deze beleidsregel met ingang van met dien de beleidsregel van toepassing op aanvragen om tegemoetkoming die uiterlijk 26juni 2020 zijn dan wel op tegemoetkomingen die voor 1januari 2021 zijn verstrekt]",
+      "recipient": "",
+      "preconditions": {
+        "expression": "LITERAL",
+        "operands": true
+      },
+      "create": [],
+      "terminate": [],
+      "sources": [
+        {
+          "validFrom": "31-03-2020",
+          "citation": "art. 8, TOGS",
+          "text": " $ Lid1 :  $  Deze beleidsregel treedt in werking met ingang van de dag na de datum van uitgifte van de Staatscourant waarin zij wordt geplaatst, en werkt terug tot en met 27maart 2020.  $ Lid2 :  $  Deze beleidsregel vervalt met ingang van 1januari 2021, met dien verstande dat de beleidsregel van toepassing blijft op aanvragen om tegemoetkoming die uiterlijk 26juni 2020 zijn ingediend, dan wel op tegemoetkomingen die voor 1januari 2021 zijn verstrekt.",
+          "juriconnect": "jci1.3:c:BWBR0043324&artikel=8&z=2020-04-22&g=2020-04-22"
+        }
+      ],
+      "explanation": ""
+    }
+  ],
+  "facts": [],
+  "duties": []
+}

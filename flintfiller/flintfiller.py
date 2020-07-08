@@ -21,8 +21,10 @@
 """
 
 import argparse
+import json
 import sys
 import pandas as pd
+import xmltodict
 
 import chunk_tag_dataframe
 import dataframe_to_frame_parser
@@ -35,6 +37,23 @@ def read_csv_to_df(csv_file):
     return dataframe
 
 
+def json_to_dict(json_file) -> dict:
+    with open(json_file, encoding="utf8") as json_dict:
+        my_dict = json.load(json_dict)
+        return my_dict
+
+
+def xml_to_dict(xml_file) -> dict:
+    with open(xml_file, encoding="utf8") as xml:
+        read = xml.read()
+        xml_dict = xmltodict.parse(remove_unicodes(read))
+        return xml_dict
+
+
+def remove_unicodes(read):
+    return read.encode('ascii', 'ignore').decode('unicode_escape')
+
+
 def process_from_commandline():
     args = parse_commandline_arguments()
     arguments_length = (len(sys.argv) - 1) / 2
@@ -43,10 +62,10 @@ def process_from_commandline():
     if args.xml and args.dict_file:
         xml_file = args.xml
         output_dict = args.dict_file
-        wetten_xml_to_dict.parse_xml_artikelen(xml_file, output_dict)
+        wetten_dict = wetten_xml_to_dict.parse_xml_artikelen(xml_file, output_dict)
         if args.df_file:
             output_df = args.df_file
-            xml_df = dict_to_dataframe.dict_to_dataframe(output_dict, output_df)
+            xml_df = dict_to_dataframe.dict_to_dataframe(wetten_dict, output_df)
             if args.pt_file:
                 output_pt = args.pt_file
                 pos_dataframe = chunk_tag_dataframe.parser('pattern', xml_df, output_pt)
