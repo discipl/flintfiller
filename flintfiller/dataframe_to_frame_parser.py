@@ -81,7 +81,7 @@ def get_empty_act_frame() -> dict:
         "recipient": "",
         "preconditions": {
             "expression": "LITERAL",
-            "operands": True
+            "operand": True
         },
         "create": [],
         "terminate": [],
