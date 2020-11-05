@@ -134,7 +134,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./assets
+          asset_path: ./assets/flintfiller-macos
           asset_name: flintfiller-macos
           asset_content_type: application/octet-stream
       - name: Upload Windows
@@ -144,7 +144,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./assets
+          asset_path: ./assets/flintfiller-windows.exe
           asset_name: flintfiller-windows.exe
           asset_content_type: application/octet-stream
       - name: Upload Linux
@@ -154,6 +154,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./assets
+          asset_path: ./assets/flintfiller-linux
           asset_name: flintfiller-linux
           asset_content_type: application/octet-stream
