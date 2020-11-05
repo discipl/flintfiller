@@ -1,3 +1,4 @@
+Fork of https://gitlab.com/calculemus-flint/flintfiller to build executables. README is [here](ci/README.md).
 # FlintFiller
 
 This project is created to automatically create Flint Frames. 

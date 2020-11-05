@@ -3,4 +3,7 @@
 **/.pytest_cache
 /calculemus.egg-info
 /flintfiller.egg-info
-
+/flintfiller/dist
+/flintfiller/build
+/flintfiller/__pycache__
+/flintfiller/flintfiller.spec
