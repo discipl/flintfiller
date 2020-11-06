@@ -1,7 +1,3 @@
-plugins {
-    id "com.jetbrains.python.envs" version "0.0.30"
-}
-
 group 'org.discipl'
 version '1.0-SNAPSHOT'
 
@@ -11,94 +7,24 @@ repositories {
 
 import org.apache.tools.ant.taskdefs.condition.Os
 
-ext {
-    python_version = "python36_64"
-    python_version_long = "3.6.2"
-    bootstap_dir = new File(buildDir, 'bootstrap')
-    python_bin = new File(bootstap_dir, python_version + '/bin')
-    python = new File(python_bin, "python")
-    flint_filler_dir = new File(projectDir, "..")
-    build_env_name = "build_env"
-    conda_env_name = "conda_env"
-    python_v_dir = new File(buildDir, "envs/$build_env_name")
-}
-
 def isWindows = Os.isFamily(Os.FAMILY_WINDOWS)
 def isMacOs = Os.isFamily(Os.FAMILY_MAC)
 
+ext {
+    flint_filler_dir = projectDir.parent
+}
+
 if (isWindows) {
     ext.pyenv = new File(projectDir, "pyenv.bat")
-    ext.python_v = new File(python_v_dir, "Scripts/python.exe")
+    ext.python_v = "python"
     ext.datas = "\"${flint_filler_dir}/.venv/Lib/site-packages/pattern/text/nl/*.txt^;pattern/text/nl\""
 } else {
-    ext.python_v = new File(python_v_dir, "bin/python")
     ext.pyenv = new File(projectDir, "pyenv.sh")
+    ext.python_v = "python"
     ext.datas = "${flint_filler_dir}/.venv/lib/python3.6/site-packages/pattern/text/nl/*.txt:pattern/text/nl"
 }
 
-envs {
-    bootstrapDirectory = bootstap_dir
-    envsDirectory = new File(buildDir, 'envs')
-
-    // Download python zips when Windows is used from https://repository.net/%archieveName%,
-    // where {archieveName} is python-{version}-{architecture}.zip.
-    // For example, for the 64 bit version of Python 3.7.2 the archive name will be python-3.7.2-64.zip
-    //    zipRepository = new URL("https://github.com/Quintor/flinteditor-mps/raw/filler/flint-filler/")
-    //    shouldUseZipsFromRepository = isWindows
-
-    // by default pipInstallOptions equals to "--trusted-host pypi.python.org"
-    // to fix CERTIFICATE_VERIFY_FAILED ssl error
-    // pipInstallOptions = "--trusted-host pypi.python.org"
-
-    python "${python_version}", "${python_version_long}", []
-    if (!isMacOs) {
-        virtualenv "${build_env_name}", "$python_version", ["poetry"]
-    }
-}
-
-rootProject.afterEvaluate {
-    tasks.findAll {
-        if (it.name == "Create_conda_env_'build_env'") {
-            println "$it depends on copy Libs"
-            it.dependsOn(copyLibs)
-        }
-    }
-}
-
-task copyLibs(type: Copy) {
-    from("$bootstap_dir/$conda_env_name/Library/Bin") {
-        include 'libcrypto-1_1-x64.*'
-        include 'libssl-1_1-x64.*'
-    }
-    into("$bootstap_dir/$conda_env_name/DLLs")
-}
-
-task buildMacEnv() {
-    dependsOn ":install_python_build"
-    onlyIf { isMacOs }
-    doLast {
-        exec {
-            environment("PYTHON_CONFIGURE_OPTS", "--enable-framework")
-            commandLine "${rootProject.buildDir}/python-build/bin/python-build", "${python_version_long}", "$bootstap_dir/$python_version"
-        }
-        exec {
-            commandLine "$python", "-m", "pip", "install", "--upgrade", "pip"
-        }
-        exec {
-            commandLine "$python", "-m", "venv", "$python_v_dir"
-        }
-        exec {
-            commandLine "$python_v", "-m", "pip", "install", "poetry"
-        }
-    }
-}
-
 task poetryConfig(type: Exec) {
-    if (isMacOs) {
-        dependsOn(buildMacEnv)
-    } else {
-        dependsOn(":build_envs")
-    }
     workingDir "$flint_filler_dir"
     commandLine "$python_v", "-m", "poetry", "config", "virtualenvs.in-project", "true"
 }
