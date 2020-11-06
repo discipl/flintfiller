@@ -19,6 +19,8 @@ jobs:
           java-version: '11'
       - name: Install dependancies
         run: sudo apt-get install libsqlite3-dev libbz2-dev liblzma-dev
+      - name: Check LDD Version
+        run: ldd --version
       - name: Build Flint Runner
         working-directory: ci
         run: ./gradlew pyinstallerFlintFiller
