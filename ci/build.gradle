@@ -20,7 +20,7 @@ if (isWindows) {
     ext.datas = "\"${flint_filler_dir}/.venv/Lib/site-packages/pattern/text/nl/*.txt^;pattern/text/nl\""
 } else {
     ext.pyenv = new File(projectDir, "pyenv.sh")
-    ext.python_v = "python"
+    ext.python_v = "python3.6"
     ext.datas = "${flint_filler_dir}/.venv/lib/python3.6/site-packages/pattern/text/nl/*.txt:pattern/text/nl"
 }
 
@@ -76,19 +76,3 @@ task rename() {
         delete("$flint_filler_dir/flintfiller/tmp")
     }
 }
-
-task clean(type: Delete) {
-
-}
-
-//task addToStaticResources(type: Copy, dependsOn: rename) {
-//    def shouldRun = !file("${generatedResourcesDir}/flintfiller/$outname").exists()
-//    if (shouldRun) {
-//        dependsOn pyinstallerFlintFiller
-//    }
-//
-//    onlyIf { shouldRun }
-//    from "$flint_filler_dir/flintfiller/dist/"
-//    into "${generatedResourcesDir}/flintfiller"
-//    include "flintfiller-*"
-//}
