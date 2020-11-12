@@ -20,10 +20,9 @@
     @contact: maaike.deboer@tno.nl, roos.bakker@tno.nl
 """
 import copy
-import json
+from typing import Union, List
 
 import pandas as pd
-from typing import Union, List
 
 
 # Todo: add docstrings
@@ -120,8 +119,18 @@ def process_wetbesluit(my_dict) -> List[DataFrameRegel]:
 
 def process_regeling(regeling: dict) -> List[DataFrameRegel]:
     regels: List[DataFrameRegel] = []
-    for artikel in regeling['regeling-tekst']['artikel']:
-        regels.extend(process_artikel(artikel))
+    artikels = None
+    if 'artikel' in regeling['regeling-tekst'].keys():
+        artikels = regeling['regeling-tekst']['artikel']
+    elif 'hoofdstuk' in regeling['regeling-tekst'].keys():
+        artikels = []
+        for hoofdstuk in regeling['regeling-tekst']['hoofdstuk']:
+            for artikel in hoofdstuk['artikel']:
+                artikels.append(artikel)
+
+    if artikels is not None:
+        for artikel in artikels:
+            regels.extend(process_artikel(artikel))
     return regels
 
 

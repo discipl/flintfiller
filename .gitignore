@@ -3,4 +3,4 @@
 **/.pytest_cache
 /calculemus.egg-info
 /flintfiller.egg-info
-
+test/temp
