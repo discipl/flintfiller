@@ -195,14 +195,19 @@ def generic_process(container: dict, meta_data: MetaData) -> List[DataFrameRegel
 def process_lijst(lijst: dict, meta_data: MetaData) -> List[DataFrameRegel]:
     regels: List[DataFrameRegel] = []
     if isinstance(lijst, dict):
-        for onderdeel in lijst['li']:
-            if isinstance(onderdeel, dict):
-                meta_data_onderdeel = copy.copy(meta_data)
-                if 'meta-data' in onderdeel.keys():
-                    meta_data_onderdeel.jci = get_jci(onderdeel['meta-data']['jcis']['jci'])
-                regels.extend(generic_process(onderdeel, meta_data_onderdeel))
-            else:
-                raise ValueError('onbekende structuur in li')
+        if isinstance(lijst['li'], list):
+            for onderdeel in lijst['li']:
+                if isinstance(onderdeel, dict):
+                    meta_data_onderdeel = copy.copy(meta_data)
+                    if 'meta-data' in onderdeel.keys():
+                        meta_data_onderdeel.jci = get_jci(onderdeel['meta-data']['jcis']['jci'])
+                    regels.extend(generic_process(onderdeel, meta_data_onderdeel))
+                else:
+                    raise ValueError('onbekende structuur in li')
+        elif isinstance(lijst['li'], dict):
+            regels.extend(generic_process(lijst['li'], meta_data))
+        else:
+            raise ValueError('onbekende structuur in lijst')
     else:
         raise ValueError('onbekende structuur in lijst')
     return regels
