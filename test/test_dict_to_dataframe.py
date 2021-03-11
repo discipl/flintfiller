@@ -2,7 +2,7 @@ from typing import List
 
 import pytest
 
-from flintfiller.dict_to_dataframe import process_artikel, DataFrameRegel, process_al, \
+from juridecompose.dict_to_dataframe import process_artikel, DataFrameRegel, process_al, \
     get_meta_data, get_versie, MetaData
 
 

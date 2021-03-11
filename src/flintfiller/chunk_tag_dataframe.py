@@ -96,8 +96,6 @@ def read_pos_tags_to_file(file):
 
 
 def parser(tagger_name, dataframe, output_file):
-    # dataframe = read_csv_to_df(str(csv_df_file))
-
     print("parsing using " + tagger_name)
 
     if tagger_name == "alpino":
